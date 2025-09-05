@@ -1,0 +1,72 @@
+1. What is your age?,2. What is your gender?  ,3. How often do you eat outside (restaurants/fast food) per week?  ,4. Which type of food do you prefer most?  ,5. What is your favorite meal of the day?  ,6. Do you drink coffee? ,"7. If yes, how many cups of coffee do you drink daily? ",8. What type of coffee do you usually drink?  ,9. Do you add sugar or sweeteners to your coffee?  ,"10. Besides coffee, which drink do you prefer the most?  ",11. How much money do you usually spend daily on food & drinks?  ,12. How important is coffee for your daily productivity?  
+20,Female,1�2 times,Somali food,Lunch,Yes,2,Iced coffee,Yes,Water,3,3
+20,Female,Never,Fast food,Lunch,Yes,1,Black coffee,Yes,Water,5,1
+25,Male,Never,Somali food,Breakfast,Yes,1,Cappuccino,Yes,Tea,0.5,1
+23,Male,Never,Somali food,Dinner,Yes,1,Black coffee,Yes,Tea,2,2
+21,Female,Never,Fast food,Lunch,Yes,1,Latte,Yes,Water,2,1
+18,Female,Never,Somali food,Lunch,Yes,1,Black coffee,Yes,Water,3,3
+28,Male,1�2 times,,Lunch,Yes,1,Other,Yes,Energy drinks,2,3
+23,Male,1�2 times,Fast food,Snacks,No,1,Black coffee,Yes,Tea,0.25,1
+20,Female,Never,Somali food,Breakfast,Yes,1,Black coffee,Yes,Water,2,1
+24,Female,1�2 times,Somali food,Lunch,Yes,1,Iced coffee,Yes,Tea,10,1
+23,Female,Never,Fast food,Dinner,Yes,1,Latte,Yes,Water,10,3
+24,Female,3�4 times,Fast food,Dinner,Yes,1,Espresso,Yes,Juice,5,2
+30,Female,Never,Somali food,Breakfast,No,,,,Tea,3,
+18,Male,3�4 times,Fast food,Dinner,Yes,1,Cappuccino,Yes,Water,6,3
+18,Female,Never,Somali food,Lunch,Yes,2,Black coffee,Yes,Juice,10,3
+27,Male,Never,Somali food,Dinner,Yes,3,Cappuccino,No,Juice,6,4
+20,Male,1�2 times,Asian,Breakfast,Yes,2,Iced coffee,Yes,Energy drinks,2,2
+23,Female,1�2 times,Fast food,Dinner,Yes,2,Espresso,Yes,Tea,3,2
+29,Prefer not to say,Never,Somali food,Lunch,No,,,,Tea,2,1
+25,Male,1�2 times,Somali food,Dinner,No,,,,Water,1.5,
+23,Male,Never,Somali food,Lunch,No,,,,Soda,2,
+24,Male,3�4 times,Somali food,Lunch,Yes,,Cappuccino,Yes,Juice,4,1
+20,,1�2 times,Somali food,Lunch,Yes,4+,Black coffee,Yes,Water,2,4
+18,Male,1�2 times,Somali food,Breakfast,No,,Other,Yes,Tea,2,2
+33,Male,3�4 times,Somali food,Breakfast,Yes,1,Espresso,No,Water,3,2
+27,Male,1�2 times,Somali food,Lunch,Yes,2,Cappuccino,Yes,Tea,3,2
+40,Male,Never,Somali food,Lunch,Yes,1,Cappuccino,Yes,Tea,2.5,1
+23,Male,1�2 times,Fast food,Breakfast,No,,,,Tea,2,1
+23,Female,1�2 times,Fast food,Lunch,No,,,,Juice,1,1
+24,Female,Never,Somali food,Breakfast,Yes,1,Cappuccino,No,Tea,4,1
+22,Female,1�2 times,Fast food,Dinner,Yes,1,Iced coffee,Yes,Tea,15,1
+28,Male,1�2 times,Somali food,Dinner,Yes,1,Cappuccino,Yes,Water,4,3
+20,Male,1�2 times,Somali food,Lunch,Yes,2,Black coffee,Yes,Juice,1,3
+,,Never,Somali food,Lunch,Yes,1,Iced coffee,Yes,Water,1,1
+,Male,1�2 times,Somali food,Breakfast,Yes,2,Cappuccino,Yes,Water,3.5,2
+20,Female,Never,Somali food,Lunch,No,,,,Water,3,
+,Male,1�2 times,Somali food,Lunch,No,,,,,5,1
+20,Male,1�2 times,Somali food,Breakfast,No,,,,Water,4,
+20,Male,Never,Somali food,Lunch,No,,,,,1,1
+22,Male,3�4 times,Somali food,Lunch,Yes,1,Cappuccino,Yes,Tea,4,1
+24,Female,1�2 times,Fast food,Dinner,Yes,1,Iced coffee,Yes,Juice,5,3
+22,Male,3�4 times,Fast food,Lunch,Yes,2,Latte,Yes,Water,30,3
+20,Female,1�2 times,Somali food,Breakfast,Yes,1,Cappuccino,Yes,Tea,20,3
+,Male,1�2 times,Somali food,Lunch,Yes,2,Iced coffee,No,Water,80,2
+20,Female,1�2 times,Somali food,Breakfast,No,1,Iced coffee,Yes,Juice,2,1
+25,Male,1�2 times,Somali food,Lunch,Yes,3,Black coffee,Yes,Tea,5,4
+19,Female,3�4 times,Somali food,Snacks,Yes,2,Other,Yes,Water,5,3
+21,Male,1�2 times,Somali food,Lunch,Yes,1,Latte,No,Tea,2,1
+22,Female,Never,Somali food,Lunch,Yes,1,Black coffee,Yes,Water,1,4
+22,Female,Never,Somali food,Lunch,Yes,2,Iced coffee,Yes,Tea,1,3
+16,Male,Never,Italian,Breakfast,Yes,1,Black coffee,Yes,Juice,0.25,3
+23,Female,1�2 times,Somali food,Breakfast,Yes,2,Black coffee,Yes,Energy drinks,10,4
+17,Female,Never,Somali food,Lunch,No,,Other,No,Tea,1,
+17,Female,Never,Somali food,Breakfast,Yes,1,Black coffee,Yes,Tea,1,4
+19,Female,1�2 times,Somali food,Breakfast,Yes,1,Cappuccino,No,Tea,100000,5
+22,Female,3�4 times,Fast food,Breakfast,Yes,1,Iced coffee,Yes,Juice,5,2
+17,Male,1�2 times,Somali food,Dinner,Yes,1,Cappuccino,,Juice,2,5
+18,Female,Never,Somali food,Breakfast,No,,Other,No,Tea,1.5,1
+24,Male,1�2 times,Italian,Breakfast,Yes,2,Black coffee,Yes,Tea,100,1
+20,Female,Never,Fast food,Lunch,Yes,2,Latte,Yes,Energy drinks,3,3
+22,Male,1�2 times,Somali food,Dinner,Yes,2,Black coffee,No,Tea,10,3
+20,Male,Never,Somali food,Snacks,Yes,2,Cappuccino,No,Water,6,1
+25,Male,1�2 times,Somali food,Lunch,Yes,1,Latte,Yes,Water,15,1
+31,Male,1�2 times,Somali food,Lunch,Yes,2,Black coffee,No,Energy drinks,2,4
+19,Male,1�2 times,Somali food,Lunch,Yes,2,Latte,Yes,Water,2,2
+21,Male,Never,Somali food,Lunch,No,,Other,No,Tea,3,1
+23,Male,Never,Other,Breakfast,Yes,2,Black coffee,Yes,Tea,10,3
+23,Male,3�4 times,Somali food,Lunch,Yes,1,Iced coffee,Yes,Water,5,4
+21,Female,1�2 times,Fast food,Lunch,Yes,1,Iced coffee,,Water,10,3
+40,Female,Never,Somali food,Breakfast,No,,Other,,Tea,3,5
+20,Female,3�4 times,Somali food,Lunch,Yes,1,Iced coffee,Yes,Juice,1,5
