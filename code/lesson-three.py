@@ -35,11 +35,7 @@ low_size, high_size = iqr_fun(df["Size_sqft"])
 df["Price"] = df["Price"].clip(lower=low_price, upper=high_price)
 df["Size_sqft"] = df["Size_sqft"].clip(lower=low_size, upper=high_size)
 
-df = pd.get_dummies(df, columns=["Location"], drop_first=False)
-
-loc_cols = [c for c in df.columns if c.startswith("Location")]
-
-df[loc_cols] = df[loc_cols].astype(int)
+df = pd.get_dummies(df, columns=["Location"], drop_first=False, dtype="int")
 
 CURRENT_YEAR = 2025
 
