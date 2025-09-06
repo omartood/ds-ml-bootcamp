@@ -92,3 +92,4 @@ Researchers at the **University of Cambridge** developed an AI tool to **acceler
 | **Benefits**     | Quicker treatment, reduced waiting times, decreased pathologist burden  |
 | **Challenges**   | Requires digital systems, IT integration, workforce training            |
 
+---
