@@ -1,0 +1,23 @@
+Timestamp,Age,Number of meals per day,Breakfast frequency (per week),Fruit & vegetable servings per day,Sugary drinks per day (soda/juice/energy drinks),Fast food frequency (per week),Water intake per day,Snacking after 8 PM,Physical activity (≥30 min) per week,Energy level today
+9/5/2025 13:48:36,21-23,3,Every day,0,0,1,1-1.5 liters,1-2 days/week,0 days,Okay
+9/5/2025 13:52:20,21-23,2,1-2 days,1,0,2-3 times,More than 2 liters,1-2 days/week,1-2 days,Okay
+9/5/2025 14:01:51,21-23,3,5-6 days,2,1 can/glass,2-3 times,1-1.5 liters,1-2 days/week,3-4 days,Low
+9/5/2025 14:10:21,21-23,2,3-4 days,1,2,4 or more times,Less than 1 liter,1-2 days,High
+9/5/2025 14:15:45,18-20,1,Never,2,0,1,1-1.5 liters,1-2 days/week,3-4 days,High
+9/5/2025 14:18:20,18-20,2,Every day,1,1 can/glass,1,1-1.5 liters,1-2 days/week,3-4 days,Okay
+9/5/2025 14:36:56,18-20,1,Never,0,0,Never,Less than 1 liter,Never,0 days,Very low
+9/5/2025 14:53:28,24-26,4,Every day,5,3 or more,4 or more times,More than 2 liters,3-4 days/week,5 or more days,Very high
+9/5/2025 16:00:46,21-23,2,3-4 days,1,1 can/glass,1,1-1.5 liters,1-2 days/week,3-4 days,High
+9/5/2025 16:17:19,18-20,2,Every day,2,1 can/glass,Never,1.5-2 liters,Never,0 days,Very high
+9/5/2025 16:24:16,21-23,2,5-6 days,0,0,Never,Less than 1 liter,Never,3-4 days,Low
+9/5/2025 18:49:32,21-23,2,1-2 days,1,2,1,Less than 1 liter,Never,1-2 days,Very low
+9/6/2025 10:09:06,18-20,4,Never,3,0,Never,1.5-2 liters,Never,5 or more days,Very high
+9/6/2025 10:09:54,24-26,3,Every day,2,3 or more,2-3 times,1-1.5 liters,3-4 days/week,0 days,Low
+9/6/2025 10:10:33,21-23,1,Every day,0,0,1,Less than 1 liter,1-2 days/week,1-2 days,Okay
+9/6/2025 10:11:28,24-26,2,1-2 days,1,1 can/glass,1,Less than 1 liter,1-2 days/week,3-4 days,Low
+9/6/2025 10:12:11,18-20,1,Never,1,1 can/glass,1,1.5-2 liters,Never,1-2 days,Very high
+9/6/2025 10:12:56,21-23,4,Every day,5,3 or more,4 or more times,More than 2 liters,3-4 days/week,5 or more days,Very high
+9/6/2025 10:13:31,24-26,2,1-2 days,1,1 can/glass,1,1-1.5 liters,1-2 days/week,1-2 days,Okay
+9/6/2025 10:14:03,18-20,1,Never,0,0,1,1-1.5 liters,Never,0 days,High
+9/6/2025 10:14:36,24-26,3,3-4 days,2,1 can/glass,1,Less than 1 liter,Never,0 days,Low
+9/6/2025 10:15:07,>26,4,Every day,5,3 or more,4 or more times,More than 2 liters,3-4 days/week,5 or more days,Very high
