@@ -1,50 +1,78 @@
-| Product | Origin  | Unit Price (\$) | Market Location  | Availability | Category |
-| ------- | ------- | --------------- | -------------| ------------ | --------- |
-| Bariis  | Dibadda | 15.85           | injida       | High         | Foodgrain |
-| Sonkor  | Dibadda | 15.00           | injida       | Medium       | Foodgrain |
-| sonkor nus Dibadda 7.00             | injida       |Medium        | Foodgrain
-| Caano   | Gudaha  | 12.50           | injida       | High         | Dairy     |
-| Rooti   | Gudaha  | 4.20            | injida       | High         | Bakery    |
-| Saliid  | Dibadda | 25.10           | injida       | Medium       | Oil       |
-| Hilib   | Gudaha  | 32.00           | injida       | High         | Meat      |
-| Digaag  | Dibadda | 40.00           | injida       | Low          | Meat      |
-| Bur     | Dibadda | 18.30           | injida       | Medium       | Foodgrain |
-| Kalluun | Gudaha  | 27.50           | injida       | Low          | Meat      |
-| Ukumo   | Gudaha  | 9.80            | injida       | High         | Dairy     |
-| Casiir  | Dibadda | 5.60            | injida       | Medium       | Beverage  |
-| Shaah   | Dibadda | 1.20            | injida       | High         | Beverage  |
-| Kafe    | Dibadda | 6.50            | injida       | Low          | Beverage  |
-| Basbaas | Dibadda | 2.80            | injida       | High         | Spice     |
-| Milix   | Dibadda | 1.50            | injida       | Medium       | Spice     |
-| Toonta  | Dibadda | 4.00            | injida       | Low          | Spice     |
-| Basal   | Gudaha  | 3.00            | injida       | Low          | Vegetable |
-| Karoot  | Gudaha  | 2.50            | injida       | Medium       | Vegetable |
-| Yaanyo  | Gudaha  | 2.20            | injida       | High         | Vegetable |
-| Baradho | Gudaha  | 1.80            | meerysano       | High         | Vegetable |
-| Digir   | Dibadda | 10.00           | injida       | Medium       | Foodgrain |
-| Maraq   | Dibadda | ,,              | injida       | Low          |Beverage  |
-|baasto   | Dibadda | 14.00           | injida       | Medium       | Foodgrain |
-|galey    | Gudaha  | ,,              |injida        |High          |Foodgrain |
-|cambuulo | Gudaha  | 8.00            | injida       | Medium       | Foodgrain |
-|baastotell| Dibadda | 16.00           | injida       | Low      | Foodgrain |
-|sambuus  | Gudaha  | 5.00            | injida       | High         | Snack     |
-|buskud   | Dibadda | 6.00            | injida       | Low          | Snack     |
-|shukulaato| Dibadda | 12.00          | injida       | Low          | Snack     |
-|casiir liin | Dibadda | ,,           | injida       | Medium       | Beverage  |
-|casiir tufaax | Dibadda | 5.00       | injida       | Medium       | Beverage  |
-|casiir moos | Dibadda | 5.50         | injida       | Medium       | Beverage  |
-|casiir cananaas | Dibadda | 6.00      | injida       | Medium       | Beverage  |
-|casiir liin macaan | Dibadda | 4.80   | injida       | Medium       | Beverage  |
-|casiir liin dhanaan | Dibadda | 4.20   | injida      | Medium       | Beverage  |
-|casiir tufaax macaan | Dibadda | 5.20   |meerysano     | Medium       | Beverage  |
-|casiir tufaax dhanaan | Dibadda | 5.00   | meerysano    | Medium       | Beverage  |
-|casiir moos macaan | Dibadda | 5.80      | injida    | Medium       | Beverage  |
-|Baradho | Gudaha | 2.20                  | injida   | Medium       | Beverage  |
-|casiir cananaas macaan | Dibadda | 6.50   | injida   | Medium       | Beverage  |
-|caano geel | Gudaha  | 1.00           | injida       | High         | Dairy     |
-|caano lo' | Gudaha  | 3.00           | injida       | Medium       | Dairy     |
-|caano ariga | Gudaha  | 1.00         | injida       | Medium       | Dairy     |
-|Timir | Dibadda  | 15.00            | injida       | High         | Snack     |
-|Qumbe | Dibadda  | 20.00            | injida       | Medium       | Snack     |
-|lows | Dibadda   | ,,               |injida        | Low          |Snack      |
-|faasuliyad | Dibadda  | ,,          | injida       | Medium       | Foodgrain |
+
+Assignment 2 Name: Burhaan Cabdulahi Cabdiraxmaan  name Githup :{marcossbc} 
+# 📊 Putland Market Product Prices Dataset
+
+## 1. Title & Data Collection Method
+**Title:** Putland Market Product Prices Dataset
+
+**Collection Method:**  
+This dataset was collected by recording prices of various products sold in Putland markets, specifically **Injida Market**.  
+The data was gathered using *direct observation* and *manual recording*.
+
+**Purpose:**  
+The dataset aims to provide real-world data for **Machine Learning** tasks, related to food and household product prices used daily by customers.
+
+---
+
+## 2. Features & Labels Description
+The dataset contains **6 features + Date**:
+
+1. **Date** – The date when the data was collected.  
+2. **Product** – Name of the product (Rice, Sugar, Milk, Bread, Oil, Meat, Chicken, Flour, Fish, Eggs).  
+3. **Origin** – Source of the product: *Imported* or *Domestic*.  
+4. **Unit Price ($)** – Price of the product in dollars.  
+   - Note: **Sugar** price is fixed at $15 per standard unit.  
+5. **Market Location** – Market where the price was recorded: *Injida Market*.  
+6. **Availability** – Level of product availability: *High, Medium, Low*.  
+7. **Category** – Type of product: *Foodgrain, Dairy, Meat, Bakery, Oil*.
+
+**Label (y):**  
+- *Unit Price ($)* can be used as the **target variable** for regression tasks.
+
+---
+
+## 3. Dataset Structure
+- **Rows (records):** 50  
+- **Columns (features):** 6 + Date  
+
+### Example (10 rows):
+
+| Product | Origin  | Unit Price ($) | Market Location | Availability | Category  |
+| ------- | ------- | --------------- | --------------- | ------------ | --------- |
+| Rice    | Imported | 15.85           | Injida          | High         | Foodgrain |
+| Sugar   | Imported | 15.00           | Injida          | Medium       | Foodgrain |
+| Milk    | Domestic | 12.50           | Injida          | High         | Dairy     |
+| Bread   | Domestic | 4.20            | Injida          | High         | Bakery    |
+| Oil     | Imported | 25.10           | Injida          | Medium       | Oil       |
+| Meat    | Domestic | 32.00           | Injida          | High         | Meat      |
+| Chicken | Imported | 40.00           | Injida          | Low          | Meat      |
+| Flour   | Imported | 18.30           | Injida          | Medium       | Foodgrain |
+| Fish    | Domestic | 27.50           | Injida          | Low          | Meat      |
+| Eggs    | Domestic | 9.80            | Injida          | High         | Dairy     |
+
+---
+
+## 4. Data Challenges
+The dataset has several real-world challenges:
+
+- **Missing values:** Some rows may lack price or availability information.  
+- **Duplicates:** Same products may appear multiple times with different prices.  
+- **Typos / Inconsistent text:** Market names may be misspelled.  
+- **Imbalance:** Availability is mostly *High*, while *Low* is rare.  
+- **Special rule:** Sugar price is fixed at $15 per standard unit, unlike other products.
+
+---
+
+## 5. Machine Learning Use Cases
+
+- **Regression:**  
+  - Predict product prices based on origin, market, and availability.  
+  - Example: Predicting next week’s Rice price.
+
+- **Classification:**  
+  - Predict Availability (High/Medium/Low) based on price and origin.  
+  - Example: Determining if a product will be available or scarce in the market.
+
+- **Clustering:**  
+  - Group similar products or markets based on prices.  
+  - Example: Comparing *Injida Market* with other markets to observe pricing patterns.
