@@ -1,0 +1,50 @@
+Data Foundations for Machine Learning: Market Prices Dataset from Mkulima Market, Nairobi
+Title & Collection Method
+Dataset Title: Daily Produce Prices and Volumes at Mkulima Market, Nairobi.
+Collection Method: The dataset was manually collected over the course of one day (8 AM – 5 PM) at Mkulima Market in Nairobi. Observations were made at different stalls to record prices, quantities, and vendor information. The idea was to capture how commodity prices and volumes varied across vendors and times of the day. Data was logged in a spreadsheet while walking through the market.
+________________________________________
+Description of Features & Labels
+The dataset contains five main features (X) and one possible label (y):
+•	Features (X):
+1.	Commodity (categorical: tomatoes, onions, sukuma wiki, potatoes, bananas, etc.)
+2.	Price per kilogram (numeric, KES)
+3.	Quantity available at stall (numeric, kilograms)
+4.	Time of observation (categorical: morning, midday, evening)
+5.	Vendor type (categorical: wholesaler, retailer, hawker)
+•	Label (y):
+o	Daily sales estimate (numeric, KES), based on observed price multiplied by approximate quantity sold during the observation.
+This makes the dataset usable for both regression (predict sales) and classification (categorize stalls as high, medium, or low sellers).
+________________________________________
+Dataset Structure
+•	Number of rows (samples): 50
+•	Number of columns (features + label): 6
+Sample of dataset (first 8 rows):
+Commodity	Price_per_kg (KES)	Quantity_kg	Time	Vendor_type	Sales_estimate (KES)
+Tomatoes	80	25	Morning	Retailer	2000
+Onions	65	40	Morning	Wholesaler	2600
+Sukuma wiki	40	50	Midday	Hawker	1800
+Potatoes	55	100	Midday	Wholesaler	5000
+Bananas	70	30	Evening	Retailer	1800
+Tomatoes	85	20	Evening	Retailer	1700
+Onions	60	35	Midday	Hawker	2100
+Potatoes	50	80	Morning	Wholesaler	4000
+________________________________________
+Quality Issues
+Like most real-world datasets, this one is not perfectly clean. Problems include:
+•	Missing values: Some vendors refused to disclose quantity sold, leading to blanks in the “Sales_estimate” column.
+•	Typos: Some entries had inconsistent spellings (e.g., “Tomatos” instead of “Tomatoes”).
+•	Duplicates: Multiple vendors selling the same item at similar times caused overlapping data.
+•	Imbalance: More stalls sold tomatoes and sukuma wiki compared to bananas or onions, making the dataset skewed toward common produce.
+•	Mixed formats: Some prices were recorded with “KES” text included (e.g., “70 KES”), requiring cleaning.
+________________________________________
+Use Case in Machine Learning
+This dataset can serve several ML tasks:
+•	Regression: Predict daily sales (KES) for a stall based on features like price, vendor type, and time of day.
+•	Classification: Categorize vendors into high sellers vs low sellers based on their estimated sales.
+•	Clustering: Group vendors by selling behavior (e.g., wholesalers vs retailers, morning vs evening sellers).
+Such an ML project would be useful for:
+•	Market authorities to forecast demand and set fair trading policies.
+•	Vendors to optimize selling times and prices.
+•	Buyers (restaurants, households) to plan bulk purchases based on expected price fluctuations.
+________________________________________
+
