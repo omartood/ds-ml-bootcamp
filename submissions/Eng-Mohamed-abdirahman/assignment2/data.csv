@@ -1,0 +1,102 @@
+Age,Gender,Business Type,Service Quality,Visits/Month,Overall Satisfaction  	
+12,	male,	Restaurant,	3,	3–4,	Satisfied	
+28,	male,	Restaurant,	3,	7 or more,	Satisfied	
+22,male,Restaurant,3,5–6,Not Satisfied	
+22,male,Restaurant,5,1–2,Satisfied	
+22,male,Retail Shop,3,1–2,Satisfied	
+21,Female,Restaurant,4,1–2,Satisfied	
+23,male,Restaurant,3,1–2,Not Satisfied	
+20,male,Restaurant,4,1–2,Satisfied	
+22,Female,Restaurant,3,3–4,Satisfied	
+20,male,Restaurant,3,3–4,Satisfied	
+21,Female,Service Provider,3,3–4,Satisfied	
+25,male,Restaurant,4,3–4,Satisfied
+19,Female,Retail Shop,3,1–2,Not Satisfied
+30,male,Restaurant,5,7 or more,Satisfied
+18,Female,Service Provider,3,3–4,Satisfied
+27,male,Restaurant,3,5–6,Not Satisfied
+24,Female,Restaurant,4,1–2,Satisfied
+22,male,Retail Shop,3,3–4,Satisfied
+29,Female,Restaurant,5,7 or more,Satisfied
+20,male,Restaurant,3,1–2,Not Satisfied
+23,Female,Service Provider,4,3–4,Satisfied
+21,male,Restaurant,3,5–6,Satisfied
+26,Female,Retail Shop,4,1–2,Not Satisfied
+28,male,Restaurant,5,7 or more,Satisfied
+19,Female,Restaurant,3,3–4,Satisfied
+22,male,Service Provider,4,1–2,Satisfied
+25,Female,Restaurant,3,5–6,Not Satisfied
+20,male,Retail Shop,3,1–2,Satisfied
+24,Female,Restaurant,4,3–4,Satisfied
+27,male,Restaurant,5,7 or more,Satisfied
+18,Female,Service Provider,3,1–2,Not Satisfied
+30,male,Restaurant,4,3–4,Satisfied
+21,Female,Retail Shop,3,3–4,Satisfied
+23,male,Restaurant,5,1–2,Satisfied
+26,Female,Restaurant,3,5–6,Not Satisfied
+29,male,Service Provider,4,1–2,Satisfied
+19,Female,Restaurant,3,3–4,Satisfied
+22,male,Retail Shop,5,7 or more,Satisfied
+25,Female,Restaurant,4,1–2,Not Satisfied
+20,male,Restaurant,3,3–4,Satisfied
+24,Female,Service Provider,3,5–6,Satisfied
+27,male,Restaurant,4,1–2,Not Satisfied
+18,Female,Retail Shop,3,3–4,Satisfied
+30,male,Restaurant,5,7 or more,Satisfied
+21,Female,Restaurant,3,1–2,Satisfied
+23,male,Service Provider,4,3–4,Not Satisfied
+26,Female,Restaurant,3,5–6,Satisfied
+29,male,Retail Shop,4,1–2,Not Satisfied
+19,Female,Restaurant,5,7 or more,Satisfied
+22,male,Restaurant,3,3–4,Satisfied
+28,Female,Restaurant,4,5–6,Satisfied
+19,male,Retail Shop,3,1–2,Not Satisfied
+21,Female,Service Provider,5,3–4,Satisfied
+23,male,Restaurant,3,3–4,Not Satisfied
+25,Female,Retail Shop,4,7 or more,Satisfied
+22,male,Restaurant,5,1–2,Satisfied
+27,Female,Service Provider,3,5–6,Not Satisfied
+20,male,Restaurant,4,3–4,Satisfied
+24,Female,Retail Shop,3,1–2,Satisfied
+29,male,Restaurant,5,7 or more,Satisfied
+18,Female,Service Provider,4,3–4,Satisfied
+30,male,Restaurant,3,5–6,Not Satisfied
+21,Female,Retail Shop,4,1–2,Satisfied
+23,male,Restaurant,5,3–4,Satisfied
+26,Female,Service Provider,3,1–2,Not Satisfied
+19,male,Restaurant,4,3–4,Satisfied
+22,Female,Retail Shop,3,5–6,Not Satisfied
+25,male,Restaurant,4,7 or more,Satisfied
+28,Female,Service Provider,5,1–2,Satisfied
+20,male,Retail Shop,3,3–4,Not Satisfied
+24,Female,Restaurant,4,5–6,Satisfied
+27,male,Service Provider,3,1–2,Not Satisfied
+18,Female,Retail Shop,4,3–4,Satisfied
+30,male,Restaurant,5,7 or more,Satisfied
+21,Female,Service Provider,3,5–6,Not Satisfied
+23,male,Retail Shop,4,1–2,Satisfied
+26,Female,Restaurant,5,3–4,Satisfied
+19,male,Service Provider,3,1–2,Not Satisfied
+22,Female,Restaurant,4,3–4,Satisfied
+25,male,Retail Shop,5,7 or more,Satisfied
+28,Female,Restaurant,3,5–6,Not Satisfied
+20,male,Service Provider,4,1–2,Satisfied
+24,Female,Retail Shop,3,3–4,Satisfied
+27,male,Restaurant,4,5–6,Satisfied
+18,Female,Service Provider,5,1–2,Not Satisfied
+30,male,Retail Shop,3,3–4,Satisfied
+21,Female,Restaurant,4,7 or more,Satisfied
+23,male,Service Provider,3,5–6,Not Satisfied
+26,Female,Retail Shop,4,1–2,Satisfied
+19,male,Restaurant,5,3–4,Satisfied
+22,Female,Service Provider,3,1–2,Not Satisfied
+25,male,Restaurant,4,3–4,Satisfied
+28,Female,Retail Shop,5,7 or more,Satisfied
+20,male,Service Provider,4,5–6,Satisfied
+24,Female,Restaurant,3,1–2,Not Satisfied
+27,male,Retail Shop,4,3–4,Satisfied
+18,Female,Service Provider,5,7 or more,Not Satisfied
+30,male,Restaurant,3,5–6,Satisfied
+21,Female,Retail Shop,4,1–2,Not Satisfied
+23,male,Restaurant,5,3–4,Satisfied
+
