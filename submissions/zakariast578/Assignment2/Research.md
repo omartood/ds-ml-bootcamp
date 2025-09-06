@@ -5,9 +5,12 @@ Mashruucani wuxuu falanqeyn ku sameeyaa xog laga soo ururiyay sahankii baahida (
 
 ### **Macluumaadka Dataset-ka**
 
-**datset**: 39 jawaab oo ansax ah
-**Tirada column-yada**: 20 (su'aalaha survey-ga)
-**Qaabka**: Qaabab isku dhafan (text, multiple choice, iwm.)
+**datset**: 39 jawaab oo ansax ah.
+
+**Tirada column-yada**: 20 (su'aalaha survey-ga).
+
+**Qaabka**: Qaabab isku dhafan (text, multiple choice, iwm.).
+
 **Mawduucyada Xogta**: Waxay ku saabsan tahay macluumaadka dadka (da'da, waxbarashada), xirfadooda, khibraddooda goobaha online-ka ah (Upwork, Fiverr), caqabadaha ay la kulmaan, hababka lacag bixinta, iyo muhiimadda ay u arkaan in la helo goob Soomaaliyeed.
 Xiriiriyeyaasha Muhiimka ah
 

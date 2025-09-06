@@ -8,25 +8,33 @@
 # 2.**Supervised vs. Unsupervised Learning**
 
 The main difference between supervised and unsupervised learning lies in the nature of the training data.
-Supervised learning uses labeled data, which means the algorithm is given both the input and the corresponding correct output. The model's goal is to learn a mapping from the input to the output. An example is a loan approval system. The model is trained on historical data of loan applications, where each application is labeled as either 'approved' or 'denied' based on factors like income, credit score, and debt-to-income ratio. The model learns to predict whether a new applicant will be approved or denied, a task known as classification.
-Unsupervised learning uses unlabeled data; there are no predefined outputs. The algorithm must find hidden patterns and structures within the data on its own. An example is social network analysis, where an unsupervised algorithm analyzes connections between users to find communities or groups with similar interests. It might identify clusters of users who frequently interact and share common pages, without ever being explicitly told what a 'community' is.
+
+**Supervised learning** uses labeled data, which means the algorithm is given both the input and the corresponding correct output. The model's goal is to learn a mapping from the input to the output. An example is a loan approval system. The model is trained on historical data of loan applications, where each application is labeled as either 'approved' or 'denied' based on factors like income, credit score, and debt-to-income ratio. The model learns to predict whether a new applicant will be approved or denied, a task known as classification.
+
+**Unsupervised learning** uses unlabeled data; there are no predefined outputs. The algorithm must find hidden patterns and structures within the data on its own. An example is social network analysis, where an unsupervised algorithm analyzes connections between users to find communities or groups with similar interests. It might identify clusters of users who frequently interact and share common pages, without ever being explicitly told what a 'community' is.
 
 # 3.**What Causes Overfitting and How to Prevent It?**
+
 **Overfitting** occurs when a machine learning model becomes too complex and learns the training data, including its noise and random fluctuations, rather than the true underlying relationship. This results in a model that performs exceptionally well on the training data but poorly on new, unseen data.
 
-# Common causes include:
+# **Common causes include:**
 
 **Model complexity:** 
 A model that is too flexible (e.g., a deep neural network with many layers on a small dataset) can memorize the training examples instead of generalizing.
+
 **Small training set:** 
 If the dataset is not large or diverse enough, the model can't learn general patterns and instead learns to fit the specific examples it's given.
 
 # To prevent overfitting, several techniques can be applied:
 
 **Simplification:** Use a simpler model or reduce the number of features.
+
 **Regularization:** This technique adds a penalty to the model for having large coefficients, which discourages it from fitting noise in the data.
+
 **Cross-validation:** A technique where the data is split into multiple subsets, and the model is trained and validated on different combinations of these subsets. This provides a more robust measure of performance on unseen data.
+
 **Early stopping:** Halt the training process once the model's performance on a validation set starts to degrade.
+
 **More data:** The simplest way to combat overfitting is to acquire a larger, more diverse dataset.
 
 # 4. **How Training and Test Data are Split**
