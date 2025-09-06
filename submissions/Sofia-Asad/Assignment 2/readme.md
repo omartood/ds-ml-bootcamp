@@ -1,4 +1,4 @@
-# Research Paper: Transportation & Commute Dataset
+# Research Paper: Transportation & Commutes Dataset
 
 ## Title & Collection Method
 
