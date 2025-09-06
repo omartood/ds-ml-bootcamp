@@ -31,7 +31,6 @@ the problem is **classification** (predicting Poor / Normal / Good)
 
   **future_status** → Poor / Normal / Good
 
+###### waxan kasoo shaqeeyey Assigment 2 waxana soo raaciyey md iyo csv ah
 
-#waxan kasoo shaqeeyey Assigment 2 waxana soo raaciyey md iyo csv ah
-
- #mahadsanidiin
+######  **mahadsanidiin**
