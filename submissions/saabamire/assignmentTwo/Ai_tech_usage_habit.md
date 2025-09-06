@@ -33,33 +33,25 @@ Dataset Structure
 • Columns: 7 (6 features + 1 label)  
  
  
+ Sample 15-row data :
+| Age Range | Sleep Hours | AI Usage | Social Media | Coding Hours | Device     | Performance |
+| --------- | ----------- | -------- | ------------ | ------------ | ---------- | ----------- |
+| 21–23     | 7–8         | 1–3 hrs  | 3–4 hrs      | 7–10 hrs     | Laptop     | Good        |
+| 21–23     | 7–8         | 1–3 hrs  | 3–4 hrs      | 4–6 hrs      | Laptop     | Good        |
+| 21–23     | 6–7         | 4–6 hrs  | 3–4 hrs      | 1–3 hrs      | Laptop     | Excellent   |
+| 18–20     | 6–7         | 1–3 hrs  | 3–4 hrs      | 1–3 hrs      | Laptop     | Good        |
+| 18–20     | 7–8         | 4–6 hrs  | 3–4 hrs      | 4–6 hrs      | Laptop     | Average     |
+| 18–20     | 6–7         | 7–10 hrs | 5–6 hrs      | 1–3 hrs      | Laptop     | Excellent   |
+| 18–20     | 5–6         | 1–3 hrs  | <1 hr        | 1–3 hrs      | Smartphone | Good        |
+| 18–20     | 7–8         | 4–6 hrs  | 3–4 hrs      | 1–3 hrs      | Laptop     | Good        |
+| 24–26     | <5          | 1–3 hrs  | >6 hrs       | 1–3 hrs      | Laptop     | Poor        |
+| 18–20     | 5–6         | 1–3 hrs  | 5–6 hrs      | 1–3 hrs      | Laptop     | Average     |
+| 18–20     | 5–6         | 1–3 hrs  | 1–2 hrs      | 1–3 hrs      | Smartphone | Excellent   |
+| 21–23     | 7–8         | 4–6 hrs  | 3–4 hrs      | 1–3 hrs      | Laptop     | Good        |
+| >26       | 7–8         | 4–6 hrs  | 3–4 hrs      | 7–10 hrs     | Laptop     | Excellent   |
+| 21–23     | 6–7         | 4–6 hrs  | 1–2 hrs      | 4–6 hrs      | Laptop     | Good        |
+| 21–23     | >8          | 1–3 hrs  | 3–4 hrs      | 0 hrs        | Smartphone | Poor        |
 
-Sample Table (15 rows)  
- 
-| Age          | Sleep Hours       | AI Usage   | Social Media      | Coding Hours | Device     | 
-Performance |  
-| ------------  | -----------------  | ----------  | -----------------  | ------------  | ----------  | -----------  | 
-| 21-23        | 7 -8 hours         | 1 -3 hours  | 3 -4 hours         | 7 -10 hours   | Laptop     | Good        |  
-| 21-23        | 7 -8 hours         | 1 -3 hours  | 3 -4 hours         | 4 -6 hours    | Laptop     | Good        |  
-| 21-23        | 6 -7 hours         | 4 -6 hours  | 3 -4 hours         | 1 -3 hours    | Laptop     | Excellent   |  
-| 18-20        | 6 -7 hours         | 1 -3 hours  | 3 -4 hours         | 1 -3 hours    | Laptop     | Good        |  
-| 18-20        | 7 -8 hours         | 4 -6 hours  | 3 -4 hours         | 4 -6 hours    | Laptop     | Average     |  
-| 18-20        | 6 -7 hours         | 7 -10 hours | 5 -6 hours         | 1 -3 hours    | Laptop     | Excellent   |  
-| 18-20        | 5 -6 hours         | 1 -3 hours  | Less than 1 hour  | 1 -3 hours    | Smartphone | Good        
-| 
-| 18-20        | 7 -8 hours         | 4 -6 hours  | 3 -4 hours         | 1 -3 hours    | Laptop     | Good        |  
-| 24-26        | Less than 5 hours | 1 -3 hours  | More than 6 hours | 1 -3 hours    | Laptop     | Poor        
-| 
-| 18-20        | 5 -6 hours         | 1 -3 hours  | 5 -6 hours         | 1 -3 hours    | Laptop     | Average     |  
-| 18-20        | 5 -6 hours         | 1 -3 hours  | 1 -2 hours         | 1 -3 hours    | Smartphone | Excellent   
-| 
-| 21-23        | 7 -8 hours         | 4 -6 hours  | 3 -4 hours         | 1 -3 hours    | Laptop     | Good        |  
-| More than 26 | 7 -8 hours         | 4 -6 hours  | 3 -4 hours         | 7 -10 hours   | Laptop     | Excellent   
-| 
-| 21-23        | 6 -7 hours         | 4 -6 hours  | 1 -2 hours         | 4 -6 hours    | Laptop     | Good        |  
-| 21-23        | More than 8 hours | 1 -3 hours  | 3 -4 hours         | 0 hours      | Smartphone | Poor        
-| 
- 
 
  
 Quality Issues : 
