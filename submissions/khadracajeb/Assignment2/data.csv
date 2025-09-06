@@ -1,0 +1,51 @@
+Daily Work Hours,Tasks Completed,Job Role,Attendance %,Productivity
+8,7,Developer,90,High
+7,5,Manager,85,Medium
+6,3,Accountant,70,Low
+9,8,Salesperson,95,High
+7,4,Salesperson,75,Medium
+10,9,Developer,98,High
+6,2,Accountant,60,Low
+8,6,Salesperson,88,Medium
+7,3,HR Officer,65,Low
+9,7,Salesperson,92,High
+8,6,Developer,87,Medium
+7,5,Manager,80,Medium
+6,3,Accountant,68,Low
+9,9,Salesperson,97,High
+10,8,Developer,95,High
+7,3,Designer,70,Low
+8,5,Salesperson,85,Medium
+6,2,Accountant,60,Low
+9,8,Manager,90,High
+8,7,Developer,92,High
+7,4,HR Officer,73,Medium
+6,3,Accountant,65,Low
+9,7,Salesperson,89,High
+10,9,Developer,96,High
+7,5,Manager,83,Medium
+8,6,Salesperson,86,Medium
+6,3,Accountant,62,Low
+9,8,HR Officer,91,High
+8,7,Developer,94,High
+7,5,Designer,82,Medium
+6,2,Accountant,60,Low
+9,9,Salesperson,98,High
+8,6,Developer,88,Medium
+7,4,Designer,72,Medium
+6,3,Accountant,64,Low
+9,7,Manager,90,High
+10,9,Developer,97,High
+7,5,Designer,74,Medium
+8,6,Salesperson,87,Medium
+6,3,Accountant,63,Low
+9,8,Manager,92,High
+8,7,Accountant,93,High
+7,5,Manager,81,Medium
+6,2,Accountant,61,Low
+9,7,Salesperson,90,High
+8,6,Accountant,89,Medium
+7,4,HR Officer,70,Medium
+6,3,Accountant,62,Low
+9,8,Manager,91,High
+10,9,Developer,95,High

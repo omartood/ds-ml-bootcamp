@@ -1,0 +1,66 @@
+# Machine Learning Assignment
+
+## 1. Define Machine Learning using a real-life example
+
+Machine Learning (ML) is a subfield of Artificial Intelligence that enables computers to learn from data and improve their performance on a task without being explicitly programmed.  
+
+A real-life example is **Netflix’s recommendation system**. When a user watches certain movies or series, Netflix collects this viewing history and applies ML algorithms to suggest other movies or shows that the user is likely to enjoy. The system continuously learns from new data (e.g., when you like, dislike, or finish a movie) to improve its recommendations.
+
+---
+
+## 2. Compare Supervised Learning and Unsupervised Learning
+
+- **Supervised Learning**  
+  - **Definition**: In supervised learning, the training data is labeled, meaning that each input has a corresponding correct output.  
+  - **Example**: Email spam detection, where emails are labeled as *spam* or *not spam*.  
+  - **Goal**: The model learns the mapping between inputs and outputs so it can predict labels for new, unseen data.  
+
+- **Unsupervised Learning**  
+  - **Definition**: In unsupervised learning, the data is unlabeled, and the model tries to find hidden patterns or groupings in the data.  
+  - **Example**: Customer segmentation in marketing, where customers are grouped into clusters based on their purchasing behavior.  
+  - **Goal**: Discover structure in the data without predefined labels.
+
+---
+
+## 3. What causes Overfitting? How can it be prevented?
+
+**Overfitting** occurs when a model learns the training data too well, including noise and irrelevant details, which makes it perform poorly on unseen data.  
+
+- **Causes**:  
+  1. Small training dataset  
+  2. Very complex models with too many parameters  
+  3. Training the model for too many epochs  
+
+- **Prevention techniques**:  
+  - Collect more data  
+  - Apply **regularization** (e.g., L1/L2 penalties)  
+  - Use **cross-validation** to tune hyperparameters  
+  - Implement **dropout** in neural networks  
+  - Reduce model complexity  
+
+---
+
+## 4. Explain how training data and test data are split, and why
+
+In most cases, the dataset is split into **80% training** and **20% test**.  
+
+- **Training data**: Used to teach the model how to recognize patterns.  
+- **Test data**: Used to evaluate how well the trained model performs on unseen data.  
+
+This separation ensures that the model is not just memorizing the training set, but can generalize to new, real-world data. Sometimes, a **validation set** is also used to fine-tune hyperparameters before final testing.
+
+---
+
+## 5. Case Study (Healthcare)
+
+A research paper titled *“Predicting Breast Cancer Using Machine Learning Algorithms” (2019)* demonstrated how ML can help in the healthcare sector.  
+
+- **Findings**:  
+  - Machine Learning algorithms achieved **over 95% accuracy** in predicting breast cancer.  
+  - This provides valuable assistance to doctors by supporting **early diagnosis** and improving **decision-making**.  
+
+- **Impact**:  
+  - Earlier detection of breast cancer increases treatment success rates.  
+  - It also reduces the workload on healthcare professionals by providing automated support systems.
+
+---
