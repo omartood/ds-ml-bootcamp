@@ -1,0 +1,58 @@
+academic_pressure,cgpa,study_satisfaction,sleep_hours,dietary_habits,financial_stress,study_hours,depression_level
+5,8,Neutral,4-6 hours,Healthy,5,Less than 5 hours,Medium
+1,8.2,Satisfied,4-6 hours,Healthy,2,More than 20 hours,low
+4,8.1,Dissatisfied,6-8 hours,Mixed,2,Less than 5 hours,low
+4,8.2,Neutral,4-6 hours,Healthy,3,5-10 hours,low
+2,7.5,Very Satisfied,8-10 hours,Healthy,1,11-15 hours,Medium
+2,2.7,Neutral,More than 10 hours,Very Healthy,2,Less than 5 hours,low
+1,8.3,Satisfied,4-6 hours,Healthy,3,16-20 hours,Medium
+4,8.5,Very Satisfied,8-10 hours,Healthy,1,16-20 hours,low
+3,9.26,Neutral,4-6 hours,Mixed,2,11-15 hours,low
+3,4,Satisfied,4-6 hours,Mixed,3,11-15 hours,Medium
+4,7.9,Neutral,4-6 hours,Healthy,1,11-15 hours,low
+4,9,Neutral,Less than 4 hours,Mixed,5,11-15 hours,Medium
+1,8.5,Satisfied,6-8 hours,Unhealthy,1,More than 20 hours,High
+2,8,Satisfied,8-10 hours,Healthy,2,5-10 hours,low
+4,9.37,Satisfied,6-8 hours,Mixed,2,11-15 hours,low
+4,6.1,Dissatisfied,6-8 hours,Mixed,3,5-10 hours,low
+4,10,Dissatisfied,6-8 hours,Mixed,4,11-15 hours,Medium
+4,7.52,Neutral,4-6 hours,Unhealthy,2,5-10 hours,Medium
+3,9.56,Satisfied,6-8 hours,Healthy,1,11-15 hours,low
+3,8,Neutral,Less than 4 hours,Very Healthy,3,Less than 5 hours,low
+4,8,Satisfied,4-6 hours,Mixed,2,More than 20 hours,low
+3,3.5,Satisfied,6-8 hours,Mixed,3,16-20 hours,low
+4,8,Neutral,4-6 hours,Mixed,2,11-15 hours,Medium
+2,2,Very Dissatisfied,4-6 hours,Very Unhealthy,2,5-10 hours,Medium
+2,4,Very Dissatisfied,6-8 hours,Mixed,2,5-10 hours,low
+2,80,Neutral,6-8 hours,Mixed,2,16-20 hours,Medium
+2,3,Neutral,6-8 hours,Healthy,3,5-10 hours,Medium
+3,2.8,Neutral,8-10 hours,Mixed,3,11-15 hours,low
+4,4,Satisfied,8-10 hours,Unhealthy,3,5-10 hours,Medium
+4,10,Very Satisfied,8-10 hours,Healthy,4,16-20 hours,Medium
+3,2.8,Very Satisfied,6-8 hours,Healthy,3,More than 20 hours,low
+4,3.4,Neutral,4-6 hours,Mixed,3,More than 20 hours,low
+2,8,Satisfied,6-8 hours,Healthy,1,11-15 hours,low
+2,4,Satisfied,6-8 hours,Unhealthy,3,5-10 hours,Medium
+3,98,Very Satisfied,6-8 hours,Mixed,2,More than 20 hours,low
+3,4.1,Satisfied,8-10 hours,Healthy,1,11-15 hours,low
+5,3.8,Very Satisfied,6-8 hours,Mixed,1,5-10 hours,Medium
+1,3.25,Very Satisfied,4-6 hours,Very Healthy,1,5-10 hours,Medium
+2,3.75,Neutral,6-8 hours,Mixed,2,5-10 hours,low
+5,3.5,Satisfied,8-10 hours,Unhealthy,5,5-10 hours,Medium
+1,7.9,Neutral,6-8 hours,Healthy,1,Less than 5 hours,low
+5,7.5,Very Satisfied,4-6 hours,Very Healthy,5,More than 20 hours,low
+2,2.9,Very Dissatisfied,4-6 hours,Unhealthy,2,5-10 hours,High
+5,4,Very Satisfied,6-8 hours,Healthy,3,More than 20 hours,Medium
+3,16,Very Satisfied,6-8 hours,Very Healthy,3,More than 20 hours,low
+4,8,Neutral,8-10 hours,Mixed,3,11-15 hours,Medium
+5,4,Satisfied,6-8 hours,Very Healthy,4,More than 20 hours,Medium
+5,93,Satisfied,8-10 hours,Healthy,1,More than 20 hours,High
+2,99,Neutral,4-6 hours,Healthy,1,5-10 hours,low
+1,25,Very Dissatisfied,8-10 hours,Very Healthy,1,5-10 hours,low
+1,80,Neutral,8-10 hours,Mixed,5,11-15 hours,low
+3,9.1,Satisfied,6-8 hours,Mixed,2,16-20 hours,low
+1,80,Dissatisfied,4-6 hours,Healthy,1,Less than 5 hours,low
+2,78,Neutral,6-8 hours,Healthy,3,Less than 5 hours,low
+2,90,Neutral,6-8 hours,Healthy,4,16-20 hours,low
+4,3.7,Satisfied,6-8 hours,Healthy,4,11-15 hours,Medium
+4,7.5,Neutral,6-8 hours,Mixed,2,Less than 5 hours,High
