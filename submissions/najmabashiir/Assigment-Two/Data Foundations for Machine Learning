@@ -1,0 +1,62 @@
+# Research Paper: Daily Fitness and Health Dataset
+
+## Title & Collection Method
+
+Title: Fitness Activity and Health Dataset
+Collection Method: I created a Google Form survey and asked 80 people from my neighborhood gym about their daily fitness habits and health status. Each person answered questions about their workout routines, diet, sleep, and weight goals.
+
+---
+
+## Description of Features & Labels
+
+* Features (X):
+
+  1. Workout Minutes per Day (numeric)
+  2. Workout Type (categorical: Cardio, Strength, Yoga, Mixed)
+  3. Daily Water Intake (Liters) (numeric)
+  4. Calories Consumed per Day (numeric)
+  5. Sleep Hours per Night (numeric)
+
+* Label (y):
+
+  * Fitness Goal Achieved → Yes / No
+
+This is a classification task (predicting whether a person achieved their goal).
+
+---
+
+## Dataset Structure
+
+* Rows: 50 people (samples)
+* Columns: 6 (5 features + 1 label)
+
+### Sample Table (8 rows)
+
+| Workout Minutes | Workout Type | Water (L) | Calories | Sleep Hours | Goal Achieved |
+| --------------- | ------------ | --------- | -------- | ----------- | ------------- |
+| 30              | Cardio       | 2.5       | 2000     | 7           | Yes           |
+| 45              | Strength     | 3.0       | 2500     | 6           | No            |
+| 60              | Mixed        | 2.0       | 2200     | 8           | Yes           |
+| 20              | Yoga         | 1.5       | 1800     | 7           | No            |
+| 40              | Cardio       | 3.5       | 2100     | 6           | Yes           |
+| 55              | Strength     | 2.8       | 2600     | 7           | No            |
+| 35              | Mixed        | 2.2       | 2300     | 8           | Yes           |
+| 25              | Yoga         | 2.0       | 1900     | 7           | No            |
+
+---
+
+## Quality Issues
+
+* Missing values: Some people skipped the water intake question.
+* Categorical text: Workout Type needs encoding for ML.
+* Inconsistency: A few wrote “Wt lifting” instead of “Strength.”
+* Imbalance: 55 achieved goals, 25 did not.
+
+---
+
+## Use Case
+
+This dataset can be used to train a classification model to predict whether someone will achieve their fitness goal based on daily habits.
+
+* Possible algorithms: Logistic Regression, Random Forest, Gradient Boosting.
+* Useful for fitness apps to give personalized recommendations (e.g., adjust workout or sleep habits).
