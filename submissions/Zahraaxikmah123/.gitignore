@@ -1,0 +1,30 @@
+# Ignore virtual environment folders
+.venv/
+venv/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore environment/system files
+.DS_Store
+Thumbs.db
+
+# Ignore VSCode settings (optional)
+.vscode/
+
+# Ignore log files and temporary files
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Ignore compiled C extensions
+*.so
+
+# If you're using dotenv files for env vars
+.env
