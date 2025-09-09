@@ -11,7 +11,7 @@ https://docs.google.com/document/d/1KJ8LpnkbWjQeRAv6gNc3QSPbh7HyorsDIWXI_0deJNA/
 
 **datset**: 42 jawaab oo ansax ah.
 
-**Tirada column-yada**: 14 (su'aalaha survey-ga).
+**Tirada column-yada**: 14 (su'aalaha survey-ga)
 
 **Qaabka**: Qaabab isku dhafan (text, multiple choice, iwm.).
 
