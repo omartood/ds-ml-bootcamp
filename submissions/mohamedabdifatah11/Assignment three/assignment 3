@@ -1,0 +1,253 @@
+          l3_preprocess.py
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import StandardScaler
+
+# ---------------- Step 1: Load & Inspect ----------------
+df = pd.read_csv("car_l3_dataset.csv")
+
+print("=== Step 1: Load & Inspect ===")
+print(df.head(10))
+print("\nShape:", df.shape)
+print("\nInfo:")
+print(df.info())
+print("\nMissing counts:")
+print(df.isnull().sum())
+print("\nLocation value counts (including NaN):")
+print(df['Location'].value_counts(dropna=False))
+
+# ---------------- Step 2: Clean Target Formatting ----------------
+df['Price'] = df['Price'].replace('[\$,]', '', regex=True).astype(float)
+print("\n=== Step 2: Clean Price ===")
+print("Price dtype:", df['Price'].dtype)
+print("Price skewness:", df['Price'].skew())
+
+# ---------------- Step 3: Fix Category Errors before Imputation ----------------
+df['Location'] = df['Location'].str.strip().str.title()
+df['Location'] = df['Location'].replace({
+    "Subrb": "Suburb",
+    "??": np.nan
+})
+print("\n=== Step 3: Location cleanup ===")
+print(df['Location'].value_counts(dropna=False))
+
+# ---------------- Step 4: Impute Missing Values ----------------
+df['Odometer_km'] = df['Odometer_km'].fillna(df['Odometer_km'].median())
+for col in ['Doors', 'Accidents', 'Location']:
+    df[col] = df[col].fillna(df[col].mode()[0])
+print("\n=== Step 4: After Imputation ===")
+print(df.isnull().sum())
+
+# ---------------- Step 5: Remove Duplicates ----------------
+before = df.shape[0]
+df = df.drop_duplicates()
+after = df.shape[0]
+print("\n=== Step 5: Remove Duplicates ===")
+print(f"Removed {before - after} duplicate rows.")
+
+# ---------------- Step 6: Outliers (IQR capping) ----------------
+for col in ['Price', 'Odometer_km']:
+    Q1, Q3 = df[col].quantile([0.25, 0.75])
+    IQR = Q3 - Q1
+    lower, upper = Q1 - 1.5*IQR, Q3 + 1.5*IQR
+    df[col] = df[col].clip(lower, upper)
+print("\n=== Step 6: After Outlier Capping ===")
+print(df[['Price', 'Odometer_km']].describe())
+
+# ---------------- Step 7: One-Hot Encode Categorical(s) ----------------
+df = pd.get_dummies(df, columns=['Location'], drop_first=False)
+print("\n=== Step 7: One-Hot Encoding ===")
+print("New columns:", [c for c in df.columns if "Location_" in c])
+
+# ---------------- Step 8: Feature Engineering ----------------
+df['CarAge'] = 2025 - df['Year']
+df['Km_per_year'] = df['Odometer_km'] / (df['CarAge'] + 1)  # avoid div by 0
+df['Is_Urban'] = df.filter(like="Location_").idxmax(axis=1).apply(lambda x: 1 if "City" in x else 0)
+df['LogPrice'] = np.log1p(df['Price'])
+print("\n=== Step 8: Feature Engineering ===")
+print(df[['CarAge', 'Km_per_year', 'Is_Urban', 'LogPrice']].head())
+
+# ---------------- Step 9: Feature Scaling ----------------
+scaler = StandardScaler()
+cont_cols = ['Odometer_km', 'CarAge', 'Km_per_year']
+df[cont_cols] = scaler.fit_transform(df[cont_cols])
+print("\n=== Step 9: Scaled Features (sample) ===")
+print(df[cont_cols].head())
+
+# ---------------- Step 10: Final Checks & Save ----------------
+print("\n=== Step 10: Final Checks ===")
+print(df.info())
+print("Missing counts:\n", df.isnull().sum())
+print(df.describe().T.head())
+
+df.to_csv("car_l3_clean_ready.csv", index=False)
+print("\nSaved cleaned dataset to car_l3_clean_ready.csv")
+
+                reflection.md
+# Reflection – Lesson 3 Data Preprocessing
+
+For missing values, I used the median for Odometer because it is less affected by extreme values. For categorical columns like Doors, Accidents, and Location, I used the mode since it represents the most common category.
+
+I handled outliers in Price and Odometer with IQR capping. This avoids throwing away useful data while reducing the impact of extreme values.
+
+For feature engineering, I created CarAge (since age strongly affects value), Km_per_year (to capture usage intensity), and Is_Urban (urban vs. non-urban effect). I also added LogPrice as an alternative target to reduce skewness.
+
+Scaling was applied only to continuous features (Odometer_km, CarAge, Km_per_year), leaving categorical dummies untouched. This keeps the data consistent and ready for modeling.
+
+The final dataset is complete, with no missing values and balanced features, saved as car_l3_clean_ready.csv.
+
+
+                 requirements.txt
+pandas>=2.2.3
+numpy>=2.1.0
+scikit-learn>=1.5.2
+
+                car_l3_clean_ready.csv
+=== Step 1: Load & Inspect ===
+     Price  Odometer_km  Doors  Accidents Location  Year
+$12      0     150000.0    4.0        0.0     City  2015
+$8     500     230000.0    4.0        1.0    Subrb  2012
+$15    300      80000.0    NaN        0.0     City  2018
+$20      0      50000.0    2.0        0.0   Suburb  2020
+$5       0          NaN    4.0        2.0    Rural  2005
+$7     200     190000.0    4.0        NaN       ??  2010
+$25      0      30000.0    2.0        0.0     City  2021
+$9     800     210000.0    NaN        1.0   Suburb  2011
+$11    400     175000.0    4.0        0.0     City  2014
+$6       0     250000.0    4.0        2.0    Rural  2008
+
+Shape: (20, 6)
+
+Info:
+<class 'pandas.core.frame.DataFrame'>
+Index: 20 entries, $12 to $5
+Data columns (total 6 columns):
+ #   Column       Non-Null Count  Dtype
+---  ------       --------------  -----
+ 0   Price        20 non-null     int64
+ 1   Odometer_km  19 non-null     float64
+ 2   Doors        18 non-null     float64
+ 3   Accidents    18 non-null     float64
+ 4   Location     20 non-null     object
+ 5   Year         20 non-null     int64
+dtypes: float64(3), int64(2), object(1)
+memory usage: 1.1+ KB
+None
+
+Missing counts:
+Price          0
+Odometer_km    1
+Doors          2
+Accidents      2
+Location       0
+Year           0
+dtype: int64
+
+Location value counts (including NaN):
+Location
+City      8
+Rural     4
+Subrb     3
+Suburb    3
+??        2
+Name: count, dtype: int64
+
+=== Step 2: Clean Price ===
+Price dtype: float64
+Price skewness: 0.30670794942783225
+
+=== Step 3: Location cleanup ===
+Location
+City      8
+Suburb    6
+Rural     4
+NaN       2
+Name: count, dtype: int64
+
+=== Step 4: After Imputation ===
+Price          0
+Odometer_km    0
+Doors          0
+Accidents      0
+Location       0
+Year           0
+dtype: int64
+
+=== Step 5: Remove Duplicates ===
+Removed 1 duplicate rows.
+
+=== Step 6: After Outlier Capping ===
+            Price    Odometer_km
+count   19.000000      19.000000
+mean   300.000000  169802.631579
+std    286.744176  100699.173109
+min      0.000000   30000.000000
+25%      0.000000   87500.000000
+50%    300.000000  175000.000000
+75%    500.000000  225000.000000
+max    800.000000  431250.000000
+
+=== Step 7: One-Hot Encoding ===
+New columns: ['Location_City', 'Location_Rural', 'Location_Suburb']
+
+=== Step 8: Feature Engineering ===
+     CarAge   Km_per_year  Is_Urban  LogPrice
+$12      10  13636.363636         1  0.000000
+$8       13  16428.571429         0  6.216606
+$15       7  10000.000000         1  5.707110
+$20       5   8333.333333         0  0.000000
+$5       20   8333.333333         0  0.000000
+
+=== Step 9: Scaled Features (sample) ===
+     Odometer_km    CarAge  Km_per_year
+$12    -0.202040 -0.282583     0.026739
+$8      0.614175  0.292676     0.394610
+$15    -0.916228 -0.857842    -0.452349
+$20    -1.222309 -1.241348    -0.671930
+$5      0.053027  1.634946    -0.671930
+
+=== Step 10: Final Checks ===
+<class 'pandas.core.frame.DataFrame'>
+Index: 19 entries, $12 to $5
+Data columns (total 12 columns):
+ #   Column           Non-Null Count  Dtype
+---  ------           --------------  -----
+ 0   Price            19 non-null     float64
+ 1   Odometer_km      19 non-null     float64
+ 2   Doors            19 non-null     float64
+ 3   Accidents        19 non-null     float64
+ 4   Year             19 non-null     int64
+ 5   Location_City    19 non-null     bool
+ 6   Location_Rural   19 non-null     bool
+ 7   Location_Suburb  19 non-null     bool
+ 8   CarAge           19 non-null     float64
+ 9   Km_per_year      19 non-null     float64
+ 10  Is_Urban         19 non-null     int64
+ 11  LogPrice         19 non-null     float64
+dtypes: bool(3), float64(7), int64(2)
+memory usage: 1.5+ KB
+None
+Missing counts:
+ Price              0
+Odometer_km        0
+Doors              0
+Accidents          0
+Year               0
+Location_City      0
+Location_Rural     0
+Location_Suburb    0
+CarAge             0
+Km_per_year        0
+Is_Urban           0
+LogPrice           0
+dtype: int64
+             count          mean  ...          75%          max
+Price         19.0  3.000000e+02  ...   500.000000   800.000000
+Odometer_km   19.0  1.051790e-16  ...     0.563162     2.667466
+Doors         19.0  3.684211e+00  ...     4.000000     4.000000
+Accidents     19.0  8.421053e-01  ...     1.500000     3.000000
+Year          19.0  2.013526e+03  ...  2017.500000  2021.000000
+
+[5 rows x 8 columns]
+
+Saved cleaned dataset to car_l3_clean_ready.csv
