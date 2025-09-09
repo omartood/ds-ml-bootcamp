@@ -3,11 +3,15 @@
 **Mashruuca Sharraxaadiisa**
 Mashruucani wuxuu falanqeyn ku sameeyaa xog laga soo ururiyay sahankii baahida (Needs Assessment Survey) ee Somali TalentLink. Ujeedada koowaad ee sahankan waxay ahayd in la fahmo baahida ka jirta suuq maxalli ah oo shaqo iyo xirfado la isku helo, gaar ahaan ardayda, dhalinyarada, iyo xirfadlayaasha Soomaaliyeed.
 
+**Research Doc**
+
+https://docs.google.com/document/d/1KJ8LpnkbWjQeRAv6gNc3QSPbh7HyorsDIWXI_0deJNA/edit?usp=sharing
+
 ### **Macluumaadka Dataset-ka**
 
-**datset**: 39 jawaab oo ansax ah.
+**datset**: 42 jawaab oo ansax ah.
 
-**Tirada column-yada**: 20 (su'aalaha survey-ga).
+**Tirada column-yada**: 14 (su'aalaha survey-ga)
 
 **Qaabka**: Qaabab isku dhafan (text, multiple choice, iwm.).
 
@@ -18,6 +22,3 @@ Xiriiriyeyaasha Muhiimka ah
  https://snueduso-my.sharepoint.com/:x:/g/personal/zakariye_st_snu_edu_so/EQIKaRSaHqVJhT0iDFMViOwBf-ozh8l_pFk9UoCJFgX-jg?e=Jj8Cq9
 
 **Summary Link**: https://forms.office.com/Pages/AnalysisPage.aspx?AnalyzerToken=Io1khPvAKQFYKVC5Rew4DlDfreo0F4p4&id=GV0-630ia02RopI0KkoBZNDDcjqVKPtEuLjmUQE0XdNUQUlLQ0RPSzlRSk9TSUhSWDU4N04xTlBMSC4u
-
-
-
