@@ -4,7 +4,7 @@
 
 1. **Collect Your Own Dataset**
 
-   - At least **100 samples (rows)**.
+   - At least **50 samples (rows)**.
 
    - At least **5 features (columns)**.
 
