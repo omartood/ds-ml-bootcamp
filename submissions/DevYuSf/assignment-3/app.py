@@ -129,16 +129,16 @@ df[num_features_to_scale] = scaler.fit_transform(df[num_features_to_scale])
 
 # === FINAL SNAPSHOT ===
 # print("\n=== FINAL HEAD ===")
-print(df.head())
+# print(df.head())
 
 # print("\n=== FINAL INFO ===")
 # print(df.info())
 
 # print("\n=== FINAL MISSING VALUES ===")
 # print(df.isnull().sum())
-# OUTPUT_CSV = 'cleaned_car_dataset.csv'
+OUTPUT_CSV = 'cleaned_car_dataset.csv'
 
-# df.to_csv(OUTPUT_CSV, index=False)
+df.to_csv(OUTPUT_CSV, index=False)
 
 # print(df.info())
 
