@@ -83,6 +83,28 @@ print(df.describe().T.head())
 df.to_csv("car_l3_clean_ready.csv", index=False)
 print("\nSaved cleaned dataset to car_l3_clean_ready.csv")
 
+    Car_13_ dataset.csv 
+Price,Odometer_km,Doors,Accidents,Location,Year
+$12,150000,4,0,City,2015
+$8,230000,4,1,Subrb,2012
+$15,80000,,0,City,2018
+$20,50000,2,0,Suburb,2020
+$5,,4,2,Rural,2005
+$7,190000,4,,??,2010
+$25,30000,2,0,City,2021
+$9,210000,,1,Suburb,2011
+$11,175000,4,0,City,2014
+$6,250000,4,2,Rural,2008
+$12,150000,4,0,City,2015
+$30,40000,2,0,Suburb,2019
+$4,300000,4,3,Rural,2004
+$10,220000,4,1,Subrb,2013
+$18,60000,2,0,City,2017
+$14,120000,4,0,Suburb,2016
+$22,45000,2,0,City,2021
+$7,180000,4,2,Rural,2009
+$16,95000,4,0,Subrb,2015
+$5,270000,4,3,??,2006
                 reflection.md
 # Reflection – Lesson 3 Data Preprocessing
 
