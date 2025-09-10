@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 
-CSV_PATH = 'car_data.csv'
+CSV_PATH = 'submissions/khadracajeb/Assignment3/car_data.csv'
 df = pd.read_csv(CSV_PATH)
 
 print("\n=== INITIAL HEAD ===")
@@ -106,5 +106,5 @@ print("\n=== dhamaan meelaha labuuxiyey ===")
 print(df.isnull().sum())
 
 # 10) Save
-OUT_PATH = "car_l3_clean_ready.csv"
+OUT_PATH = "submissions/khadracajeb/Assignment3/car_l3_clean_ready.csv"
 df.to_csv(OUT_PATH, index=False)
