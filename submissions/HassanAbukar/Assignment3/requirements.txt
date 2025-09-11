@@ -1,0 +1,25 @@
+pandas>=2.3.2
+numpy>=1.25.0
+scikit-learn>=1.3.3
+
+# Python Environment Setup for Data Preprocessing Assignment
+
+
+## Step 1: Check Python Installation
+
+Make sure Python 3.13 is installed:
+
+```bash
+python --version
+
+# Step 2: (Optional but recommended) Create a virtual environment
+ uv init . to locate your current directory and you dont need to activate
+
+
+
+
+# Before making an environment make sure to install uv package
+pip install uv in your terminal 
+
+# Step 3: Install Required Libraries
+uv add pandas scikit-learn, # you dont need to install numpy as it comes with pandas
