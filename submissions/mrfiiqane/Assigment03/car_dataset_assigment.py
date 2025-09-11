@@ -29,6 +29,7 @@ print(df["Price"].describe())
 #3: Fix Category Errors before Imputation — normalize Location text, map typos (e.g., Subrb→Suburb),
 #convert unknowns (e.g., ??) to missing; recount including missing.
 df["Location"] = df["Location"].replace({"Subrb": "Suburb", "??": pd.NA})
+print(df["Location"].value_counts(dropna=False))
 
 
 #4: Impute Missing Values (justify choices) — Odometer\_km→median; Doors/Accidents→mode;
@@ -37,7 +38,8 @@ df["Odometer_km"] = df["Odometer_km"].fillna(df["Odometer_km"].median())
 df["Doors"]  = df["Doors"].fillna(df["Doors"].mode()[0])
 df["Accidents"]  = df["Accidents"].fillna(df["Accidents"].mode()[0])
 df["Location"]  = df["Location"].fillna(df["Location"].mode()[0])
-
+print("eeg missing values kadib impute:")
+print(df.isnull().sum())
 
 # 5: Remove Duplicates — report shape before/after and rows removed
 before = df.shape
@@ -74,25 +76,31 @@ print("columnska cusub waa :", [c for c in df.columns if c.startswith("Location_
 CURRENT_YEAR = 2025
 df["CarAge"] = CURRENT_YEAR - df["Year"]
 df["Km__per_year"] = df["Odometer_km"] / df["CarAge"].replace(0, np.nan)
+df["Accident_Rate"] = df["Accidents"] / df["CarAge"].replace(0, np.nan)
+df["Is_OldCar"] = (df["CarAge"] > 15).astype(int)
 df["is_Urban"] = 1 - df["Location_Rural"]
 df["log_Price"] = np.log1p(df["Price"])
 
+# print("soo eeg Feature Engineering sameeyey :")
+# print(df[["CarAge", "Km__per_year", "Accident_Rate", "Is_OldCar", "Is_Urban", "log_Price"]].head())
 
 # 9: Feature Scaling (X only) — standardize continuous features; do not scale Price or LogPrice; prefer leaving 0/1 dummies unscaled; show a small sample of scaled values
 dont_scale = {"Price", "log_Price"}
 numeric_cols = df.select_dtypes(include=["int64", "float64"]).columns.to_list() #soo saar kuwa numeric ah
-exclude = [c for c in df.columns if c.startswith("Location")]    #ka reeb 0 1 kuwa binary dummies ah
+exclude = [c for c in df.columns if c.startswith("Location_")] + ["Is_Urban"] + ["Is_OldCar"] #ka reeb 0 1 kuwa binary
 num_features_to_scale = [c for c in numeric_cols if c not in dont_scale and c not in exclude]
 
 scaler = StandardScaler()
 df[num_features_to_scale] = scaler.fit_transform(df[num_features_to_scale])
+print("Fiiri Scaled ka:")
+print(df[num_features_to_scale].head())
 
 
 print(df.info())    #xog yar oo ku saabsan datasetka 
 print(df.isnull().sum())  #kuwa maqan ii sheeg iskuna soo dar  
 print(df.describe())
 
-print("=== Gabagabo my DATA SAMPLE ===")
+print("___Gabagabo my DATA SAMPLE___")
 print(df)
 
 # Save garee file ka aa nadiifiyey
