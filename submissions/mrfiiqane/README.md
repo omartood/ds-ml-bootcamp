@@ -1,14 +1,13 @@
-#Assigmwents - mrfiiqane     magacaygu waa maxamed maxamuud
+**#Assigmwents - mrfiiqane     magacaygu waa maxamed maxamuud**
 
-#Welcome!
+**#Welcome!**
 
-#this folder containes all assigments submissions for Ds & ml bootcamp
+**#this folder containes all assigments submissions for Ds & ml bootcamp**
 
+**#jadwalka**
 
-#jadwalka 
+**Assigment 1 - Done**
+**Assigment 2 - Done**
+**Assigment 3 -  waiting**
 
-Assigment 1 - Done
-Assigment 2 -
-
-
-#Note$ = each assigment i will try to add descriptions , readme, answers
+**#Note$ = each assigment i will try to add descriptions , readme, answers**

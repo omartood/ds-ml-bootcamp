@@ -1,0 +1,72 @@
+Age,Coffee_Consumption ,Cups_of_Coffee,Preferred_Coffee_Type  ,Sugar_Usage  ,Daily_Spending  ,Favorite_Meal  ,Productivity_Rating  
+20,Yes,2,Iced coffee,Yes,3,Lunch,3
+20,Yes,1,Black coffee,Yes,5,Lunch,1
+25,Yes,1,Cappuccino,Yes,0.5,Breakfast,1
+23,Yes,1,Black coffee,Yes,2,Dinner,2
+21,Yes,1,Latte,Yes,2,Lunch,1
+18,Yes,1,Black coffee,Yes,3,Lunch,3
+28,Yes,1,Other,Yes,2,Lunch,3
+23,No,1,Black coffee,Yes,0.25,Snacks,1
+20,Yes,1,Black coffee,Yes,2,Breakfast,1
+24,Yes,1,Iced coffee,Yes,10,Lunch,1
+23,Yes,1,Latte,Yes,10,Dinner,3
+24,Yes,1,Espresso,Yes,5,Dinner,2
+30,No,,,,3,Breakfast,
+18,Yes,1,Cappuccino,Yes,6,Dinner,3
+18,Yes,2,Black coffee,Yes,1000,Lunch,5
+27,Yes,3,Cappuccino,No,6,Dinner,4
+20,Yes,2,Iced coffee,Yes,2,Breakfast,2
+23,Yes,2,Espresso,Yes,3,Dinner,2
+29,No,,,,2,Lunch,1
+25,No,,,,1.5,Dinner,
+23,No,,,,2,Lunch,
+24,Yes,,Cappuccino,Yes,4,Lunch,1
+20,Yes,4+,Black coffee,Yes,2,Lunch,4
+18,No,,Other,Yes,2,Breakfast,2
+33,Yes,1,Espresso,No,3,Breakfast,2
+27,Yes,2,Cappuccino,Yes,3,Lunch,2
+40,Yes,1,Cappuccino,Yes,2.5,Lunch,1
+23,No,,,,2,Breakfast,1
+23,No,,,,1,Lunch,1
+24,Yes,1,Cappuccino,No,4,Breakfast,1
+22,Yes,1,Iced coffee,Yes,15,Dinner,1
+28,Yes,1,Cappuccino,Yes,4,Dinner,3
+20,Yes,2,Black coffee,Yes,1,Lunch,3
+,Yes,1,Iced coffee,Yes,1,Lunch,1
+,Yes,2,Cappuccino,Yes,3.5,Breakfast,2
+20,No,,,,3,Lunch,
+,No,,,,5,Lunch,1
+20,No,,,,4,Breakfast,
+20,No,,,,1,Lunch,1
+22,Yes,1,Cappuccino,Yes,4,Lunch,1
+24,Yes,1,Iced coffee,Yes,5,Dinner,3
+22,Yes,2,Latte,Yes,30,Lunch,3
+20,Yes,1,Cappuccino,Yes,20,Breakfast,3
+,Yes,2,Iced coffee,No,80,Lunch,2
+20,No,1,Iced coffee,Yes,2,Breakfast,1
+25,Yes,3,Black coffee,Yes,5,Lunch,4
+19,Yes,2,Other,Yes,5,Snacks,3
+21,Yes,1,Latte,No,2,Lunch,1
+22,Yes,1,Black coffee,Yes,1,Lunch,4
+22,Yes,2,Iced coffee,Yes,1,Lunch,3
+16,Yes,1,Black coffee,Yes,0.25,Breakfast,3
+23,Yes,2,Black coffee,Yes,10,Breakfast,4
+17,No,,Other,No,1,Lunch,
+17,Yes,1,Black coffee,Yes,1,Breakfast,4
+19,Yes,1,Cappuccino,No,100000,Breakfast,5
+22,Yes,1,Iced coffee,Yes,5,Breakfast,2
+17,Yes,1,Cappuccino,,2,Dinner,5
+18,No,,Other,No,1.5,Breakfast,1
+24,Yes,2,Black coffee,Yes,100,Breakfast,1
+20,Yes,2,Latte,Yes,3,Lunch,3
+22,Yes,2,Black coffee,No,10,Dinner,3
+20,Yes,2,Cappuccino,No,6,Snacks,1
+25,Yes,1,Latte,Yes,15,Lunch,1
+31,Yes,2,Black coffee,No,2,Lunch,4
+19,Yes,2,Latte,Yes,2,Lunch,2
+21,No,,Other,No,3,Lunch,1
+23,Yes,2,Black coffee,Yes,10,Breakfast,3
+23,Yes,1,Iced coffee,Yes,5,Lunch,4
+21,Yes,1,Iced coffee,,10,Lunch,3
+40,No,,Other,,3,Breakfast,5
+20,Yes,1,Iced coffee,Yes,1,Lunch,5

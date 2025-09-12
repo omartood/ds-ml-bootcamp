@@ -1,0 +1,33 @@
+RESEARCH PAPER (2) Premier League 2023/24 Season Prediction
+
+
+1. Introduction
+This research focuses on predicting outcomes in the Premier League for the 2023/24 season. Using
+historical data, we aim to forecast total goals scored in matches. The model type used for this
+prediction is regression, which is suitable for continuous target variables such as total goals.
+2. Dataset
+- Number of Samples: 50
+- Number of Columns: 13
+3. Features (X)
+- Home Team
+- Away Team
+- Home Points
+- Away Points
+- Home Position
+- Away Position
+- Home Last 5 Matches Points (Home-L5Match-points)
+- Away Last 5 Matches Points (Away-L5Match-points)
+- Home Team Average Goals Scored (Home-team-Avg-G_scored)
+- Away Team Average Goals Scored (Away-goals-Avg-G_scored)
+- Home Average Goals Conceded per Match (Home-Avg-G-Conceded-per-match)
+- Away Average Goals Conceded per Match (Away-Avg-G-Conceded-per-match)
+4. Label (Y)
+- Total Goals
+5. Methodology
+The regression model analyzes relationships between match features and total goals. Features like
+team points, positions, recent form, and scoring/conceding averages are included to improve
+prediction accuracy.
+6. Conclusion
+This dataset and regression approach provide a structured method for predicting match outcomes in
+the Premier League 2023/24 season. Further improvements could include additional features such
+as injuries, head-to-head history, or home/away performance trends.

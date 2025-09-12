@@ -1,0 +1,83 @@
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import StandardScaler
+
+CSV_PATH = 'car_dataset.csv'
+df = pd.read_csv(CSV_PATH)
+
+# === INITIAL SNAPSHOT ===
+print("\n=== INITIAL HEAD ===")
+print(df.head())
+
+print("\n=== INITIAL INFO ===")
+print(df.info())
+
+print("\n=== INITIAL MISSING VALUES ===")
+print(df.isnull().sum())
+
+# 1) Clean target formatting
+df["Price"] = df["Price"].replace(r"[\$,]", "", regex=True)
+df["Price"] = pd.to_numeric(df["Price"], errors="coerce")  # handle bad text like '71r171.0'
+
+# 2) Fix categorical issues
+df["Location"] = df["Location"].replace({"Subrb": "Suburb", "??": pd.NA})
+
+# 3) Impute missing values
+df["Odometer_km"] = df["Odometer_km"].replace(r"[^0-9.]", "", regex=True)  # remove text
+df["Odometer_km"] = pd.to_numeric(df["Odometer_km"], errors="coerce")
+
+df["Odometer_km"] = df["Odometer_km"].fillna(df["Odometer_km"].median())
+df["Doors"]       = df["Doors"].fillna(df["Doors"].mode()[0])
+df["Location"]    = df["Location"].fillna(df["Location"].mode()[0])
+
+# 4) Remove duplicates
+before = df.shape
+df = df.drop_duplicates()
+after = df.shape
+
+# 5) IQR capping (for Price & Odometer)
+def iqr_fun(series, k=1.5):
+    q1, q3 = series.quantile([0.25, 0.75])
+    iqr = q3 - q1
+    lower = q1 - k * iqr
+    upper = q3 + k * iqr
+    return lower, upper
+
+low_price, high_price = iqr_fun(df["Price"])
+low_odo,   high_odo   = iqr_fun(df["Odometer_km"])
+
+df["Price"]      = df["Price"].clip(lower=low_price, upper=high_price)
+df["Odometer_km"] = df["Odometer_km"].clip(lower=low_odo, upper=high_odo)
+
+# 6) One-hot encode categorical
+df = pd.get_dummies(df, columns=["Location"], drop_first=False, dtype="int")
+
+# 7) Feature engineering
+CURRENT_YEAR = 2025
+df["CarAge"] = CURRENT_YEAR - df["Year"]
+df["Price_per_1000km"] = df["Price"] / (df["Odometer_km"] / 1000 + 1)
+df["Is_City"] = df.get("Location_City", 0).astype(int)
+df["LogPrice"] = np.log1p(df["Price"])
+
+# 8) Feature scaling
+dont_scale = {"Price", "LogPrice"}
+numeric_cols = df.select_dtypes(include=["int64", "float64"]).columns.to_list()
+exclude = [c for c in df.columns if c.startswith("Location_")] + ["Is_City"]
+num_features_to_scale = [c for c in numeric_cols if c not in dont_scale and c not in exclude]
+
+scaler = StandardScaler()
+df[num_features_to_scale] = scaler.fit_transform(df[num_features_to_scale])
+
+# === FINAL SNAPSHOT ===
+print("\n=== FINAL HEAD ===")
+print(df.head())
+
+print("\n=== FINAL INFO ===")
+print(df.info())
+
+print("\n=== FINAL MISSING VALUES ===")
+print(df.isnull().sum())
+
+# 9) Save final
+OUT_PATH = "Cars_Clean.csv"
+df.to_csv(OUT_PATH, index=False)
