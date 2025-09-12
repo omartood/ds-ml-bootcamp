@@ -1,0 +1,27 @@
+import pandas as pd
+
+# Load dataset
+df = pd.read_csv("data.csv")
+
+# --- Cleaning steps ---
+# Strip spaces from column names
+df.columns = df.columns.str.strip()
+
+# Fix typos in commodity names (e.g., Tomatos → Tomatoes)
+df["Commodity"] = df["Commodity"].str.strip().str.title()
+df["Commodity"] = df["Commodity"].replace({"Tomatos": "Tomatoes"})
+
+# Remove "KES" text from price and convert to numeric
+df["Price_per_kg"] = df["Price_per_kg"].astype(str).str.replace("KES", "", case=False).str.strip()
+df["Price_per_kg"] = pd.to_numeric(df["Price_per_kg"], errors="coerce")
+
+# Drop duplicates
+df = df.drop_duplicates()
+
+# Handle missing values (fill Sales_estimate with 0 if blank)
+df["Sales_estimate"] = df["Sales_estimate"].fillna(0)
+
+# Save cleaned dataset
+df.to_csv("cleaned_data.csv", index=False)
+
+print("✅ Data cleaned and saved as cleaned_data.cs
