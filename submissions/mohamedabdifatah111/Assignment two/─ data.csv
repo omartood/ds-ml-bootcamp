@@ -1,52 +1,10 @@
 Commodity,Price_per_kg,Quantity_kg,Time,Vendor_type,Sales_estimate
-Tomatos,80,25,Morning,Retailer,2000
+Tomatoes,80,25,Morning,Retailer,2000
 Onions,65,40,Morning,Wholesaler,2600
 Sukuma wiki,40,50,Midday,Hawker,1800
 Potatoes,55,100,Midday,Wholesaler,5000
-Bananas,70 KES,30,Evening,Retailer,1800
+Bananas,70,30,Evening,Retailer,1800
 Tomatoes,85,20,Evening,Retailer,1700
 Onions,60,35,Midday,Hawker,2100
 Potatoes,50,80,Morning,Wholesaler,4000
-Sukuma wiki,45,60,Morning,Retailer,2700
-Tomatos,75,22,Evening,Hawker,1650
-Bananas,65,28,Morning,Retailer,1820
-Onions,70,45,Evening,Wholesaler,3150
-Potatoes,52,90,Midday,Retailer,4680
-Sukuma wiki,38,40,Evening,Hawker,1520
-Tomatoes,90,18,Morning,Retailer,1620
-Onions,68,33,Midday,Hawker,2244
-Potatoes,60,110,Morning,Wholesaler,6600
-Bananas,72 KES,35,Evening,Retailer,2520
-Tomatos,82,27,Midday,Retailer,2214
-Sukuma wiki,42,55,Morning,Hawker,2310
-Onions,67,38,Evening,Wholesaler,2546
-Potatoes,58,95,Midday,Wholesaler,5510
-Bananas,68,32,Morning,Retailer,2176
-Tomatoes,88,19,Evening,Retailer,1672
-Onions,62,36,Midday,Hawker,2232
-Sukuma wiki,39,52,Morning,Retailer,2028
-Potatoes,54,85,Evening,Wholesaler,4590
-Bananas,66,29,Midday,Retailer,1914
-Tomatos,81,26,Morning,Hawker,2106
-Onions,64,41,Evening,Wholesaler,2624
-Potatoes,57,100,Midday,Retailer,5700
-Sukuma wiki,41,45,Morning,Hawker,1845
-Bananas,70,33,Evening,Retailer,2310
-Tomatoes,86,21,Midday,Retailer,1806
-Onions,63,39,Morning,Wholesaler,2457
-Potatoes,59,120,Evening,Wholesaler,7080
-Sukuma wiki,40,48,Midday,Hawker,1920
-Tomatos,79,24,Morning,Retailer,1896
-Bananas,67 KES,31,Evening,Retailer,2077
-Onions,61,34,Midday,Hawker,2074
-Potatoes,56,105,Morning,Wholesaler,5880
-Sukuma wiki,43,50,Evening,Retailer,2150
-Tomatoes,87,22,Midday,Retailer,1914
-Onions,69,37,Morning,Wholesaler,2553
-Potatoes,53,92,Evening,Retailer,4876
-Bananas,71,34,Morning,Retailer,2414
-Tomatos,84,25,Midday,Hawker,2100
-Sukuma wiki,44,54,Evening,Retailer,2376
-Onions,65,42,Morning,Wholesaler,2730
-Potatoes,60,115,Midday,Wholesaler,6900
-Bananas,73,36,Evening,Retailer,2628
+...
