@@ -66,4 +66,4 @@ This dataset can be used to train a **regression model** to predict **student sl
   - Understand how **study load, caffeine use, and screen time** affect student sleep.  
   - Provide insights for **health professionals and educators** to encourage better sleep hygiene.  
   - Support interventions for students struggling with **sleep deprivation**.  
-----
+---
