@@ -1,0 +1,9 @@
+Commodity,Price_per_kg,Quantity_kg,Time,Vendor_type,Sales_estimate
+Tomatoes,80,25,Morning,Retailer,2000
+Onions,65,40,Morning,Wholesaler,2600
+Sukuma Wiki,40,50,Midday,Hawker,1800
+Potatoes,55,100,Midday,Wholesaler,5000
+Bananas,70,30,Evening,Retailer,1800
+Tomatoes,85,20,Evening,Retailer,1700
+Onions,60,35,Midday,Hawker,2100
+Potatoes,50,80,Morning,Wholesaler,4000
