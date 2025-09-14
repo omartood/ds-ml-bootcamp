@@ -6,7 +6,7 @@
 
 **Regression** in machine learning is a type of supervised learning used to predict a continuous numerical value. The goal is to find the relationship between an independent variable (or variables) and a dependent variable, allowing us to predict future outcomes based on that relationship.
 
-**difference between regression and classification** is the type of output they produce. **Regression** predicts a **continuous, numerical value**, like a price or temperature. **Classification**, on the other hand, predicts a **discrete, categorical label**, such as "spam" or "not spam."
+**The difference between regression and classification** is the type of output they produce. **Regression** predicts a **continuous, numerical value**, like a price or temperature. **Classification**, on the other hand, predicts a **discrete, categorical label**, such as "spam" or "not spam."
 
 * **Regression Example**: Predicting the **price of a house** based on its size, location, and number of bedrooms.  
 * **Classification Example**: Determining if an email is **spam or not spam** based on its content and sender.
