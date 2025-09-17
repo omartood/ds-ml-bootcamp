@@ -1,0 +1,55 @@
+Timestamp,Age, Gender,"Tiredness
+",Hours-sleep,Healthy-habit, Sleep quality
+9/5/2025 17:30:40,24,Female,High,Less than 4 hours,Yes,Poor
+9/5/2025 17:31:49,23,Male,Medium,6–8 hours,Yes,Excellent
+9/5/2025 17:31:58,23,Female,Medium,6–8 hours,No,Good
+9/5/2025 17:32:45,21,Male,Medium,6–8 hours,Yes,Good
+9/5/2025 17:38:28,22,Male,Medium,4–6 hours,Yes,Good
+9/5/2025 17:45:23,30,Male,Medium,6–8 hours,Yes,Excellent
+9/5/2025 17:47:25,20,Male,Medium,4–6 hours,Yes,Excellent
+9/5/2025 17:52:45,19,Female,Very low,6–8 hours,No,Good
+9/5/2025 18:08:02,21,Female,Medium,6–8 hours,Yes,Good
+9/5/2025 18:20:46,19,Female,High,4–6 hours,Yes,Good
+9/5/2025 18:21:25,19,Female,High,4–6 hours,Yes,Good
+9/5/2025 18:30:25,25,Male,Low,6–8 hours,Yes,Good
+9/5/2025 18:31:55,21,Male,Medium,4–6 hours,No,Good
+9/5/2025 18:50:12,21,Female,Medium,4–6 hours,Yes,Good
+9/5/2025 18:52:05,19,Male,Medium,6–8 hours,Yes,Good
+9/5/2025 18:58:51,21,Male,High,6–8 hours,Yes,Good
+9/5/2025 19:06:49,21,Male,Medium,6–8 hours,Yes,Good
+9/5/2025 19:16:32,23,Male,Very low,6–8 hours,Yes,Excellent
+9/5/2025 19:17:14,23,Male,Very low,6–8 hours,Yes,Excellent
+9/5/2025 19:18:17,23,Male,Medium,4–6 hours,Yes,Average
+9/5/2025 19:46:25,23,Female,Very high,4–6 hours,No,Good
+9/5/2025 19:54:58,19,Female,Low,6–8 hours,No,Good
+9/5/2025 20:06:39,21,Male,Medium,6–8 hours,Yes,Excellent
+9/5/2025 20:12:59,21,Male,Medium,4–6 hours,Yes,Good
+9/5/2025 20:39:11,25,Female,Medium,6–8 hours,Yes,Good
+9/5/2025 20:48:33,19,Female,Medium,6–8 hours,Yes,Excellent
+9/5/2025 20:56:24,19,Female,Very high,More than 8 hours,Yes,Good
+9/5/2025 21:13:49,20,Male,Medium,6–8 hours,Yes,Excellent
+9/5/2025 21:33:43,25,Male,Medium,6–8 hours,Yes,Excellent
+9/5/2025 21:41:47,22,Female,High,More than 8 hours,No,Good
+9/5/2025 21:41:50,22,Female,Medium,Less than 4 hours,Yes,Very poor
+9/5/2025 22:18:11,22,Female,Medium,4–6 hours,No,Good
+9/5/2025 22:38:48,20,Female,Medium,6–8 hours,Yes,Good
+9/5/2025 22:43:44,20,Female,Medium,6–8 hours,No,Excellent
+9/6/2025 0:04:35,22,Male,Medium,More than 8 hours,Yes,Good
+9/6/2025 0:09:28,22,Male,Medium,6–8 hours,Yes,Good
+9/6/2025 0:18:48,22,Male,Medium,6–8 hours,No,Excellent
+9/6/2025 0:36:22,25,Male,Medium,6–8 hours,No,Good
+9/6/2025 0:48:39,21,Male,Very low,4–6 hours,Yes,Poor
+9/6/2025 0:55:57,21,Female,Medium,6–8 hours,Yes,Good
+9/6/2025 8:33:00,30,Male,Medium,6–8 hours,Yes,Good
+9/6/2025 8:59:07,22,Male,Medium,4–6 hours,Yes,Good
+9/6/2025 9:04:08,23,Male,Medium,6–8 hours,No,Good
+9/6/2025 9:25:13,25,Male,Very high,4–6 hours,No,Average
+9/6/2025 9:25:42,20,Female,Medium,4–6 hours,No,Poor
+9/6/2025 9:27:12,23,Male,Medium,6–8 hours,Yes,Good
+9/6/2025 9:30:56,21,Male,Low,4–6 hours,Yes,Average
+9/6/2025 9:31:22,21,Male,Low,4–6 hours,Yes,Good
+9/6/2025 9:34:03,19,Male,Very low,6–8 hours,Yes,Excellent
+9/6/2025 9:36:47,24,Male,Very low,6–8 hours,Yes,Excellent
+9/6/2025 11:54:35,22years,Female,Medium,6–8 hours,Yes,Good
+9/6/2025 15:43:42,20,Male,Medium,4–6 hours,No,Excellent
+9/6/2025 17:16:12,24,Male,Medium,More than 8 hours,Yes,Good
