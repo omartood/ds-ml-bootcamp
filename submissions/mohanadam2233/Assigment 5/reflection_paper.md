@@ -10,16 +10,18 @@ The target (what we want to predict) was the **Price** column. I trained the mod
 - **Random Forest**: This model is based on many decision trees. Each tree makes its own prediction, and the forest averages the results to give a final prediction.  
 
 ## Comparison of Models (Sanity Check)
-I tested both models on one unseen house (from `X_test`):  
+I tested both models on **three unseen houses (from `X_test`)**.  
 
-- **Actual Price**: $292,500  
-- **Linear Regression Prediction**: $188,637  
-- **Random Forest Prediction**: $290,899  
+| House | Actual Price | LR Prediction | RF Prediction |
+|-------|--------------|---------------|---------------|
+| 1     | $292,500     | $188,637      | $290,899      |
+| 2     | $554,800     | $594,041      | $557,028      |
+| 3     | $367,500     | $444,366      | $396,774      |
 
 ### Observations
-- Linear Regression predicted much lower than the real price.  
-- Random Forest prediction was very close to the actual price.  
-- This shows that Random Forest gave more realistic results because it can capture complex patterns.  
+- **Linear Regression** often predicted too high or too low, missing the real values by a large margin.  
+- **Random Forest** predictions were much closer to the actual prices in all three cases.  
+- This shows Random Forest gave more realistic results because it can capture complex patterns.  
 
 ## Understanding Random Forest
 - **What it is**: Random Forest is an *ensemble model* that uses many decision trees.  
@@ -40,8 +42,7 @@ When I compared error metrics (**R², MAE, RMSE**):
 - Random Forest is more powerful and flexible, but also more complex.  
 
 ## My Findings
-Overall, **Random Forest is the better model** for predicting house prices in this project. It gave predictions much closer to the real values (e.g., $290,899 vs. $292,500).  
+Overall, **Random Forest is the better model** for predicting house prices in this project.  
+It gave predictions much closer to the real values, as shown in the sanity check table.  
 
-Linear Regression can be useful for quick insights or when data has a simple linear relationship. But for housing data, which is more complicated, Random Forest is stronger.  
-
-👉 Therefore, I prefer **Random Forest** because it balances accuracy and flexibility, and it handled the test case very well.  
+👉 Therefore, I prefer **Random Forest** because it balances accuracy and flexibility, and it handled the test cases very well.  
