@@ -1,4 +1,5 @@
 # 🎓 Assignment – House Price Prediction with Linear Regression & Random Forest
+Due: Tuesday, September 18, 2025 — 12:00 PM (Africa/Mogadishu / EAT)
 
 ## **Part A – Practical (Jupyter Notebook)**
 
