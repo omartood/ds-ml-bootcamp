@@ -30,10 +30,10 @@ The overall performance of the two models on the test set is summarized below:
 
 | Metric | Linear Regression | Random Forest |
 |--------|------------------|---------------|
-| R²     | 0.848            | 0.856         |
-| MAE    | 63,086           | 54,586        |
-| MSE    | 5,718,940,941    | 5,421,850,107 |
-| RMSE   | 75,624           | 73,633        |
+| R²     | 0.848            | 0.859         |
+| MAE    | 63,086           | 52,524        |
+| MSE    | 5,718,940,941    | 5,283,317,455 |
+| RMSE   | 75,624           | 72,686        |
 
 Random Forest achieved a higher **R²** and lower error metrics (MAE, RMSE) than Linear Regression. This demonstrates that RF can better capture complex relationships in the data, whereas LR may underperform when the features and target are not strictly linearly related.
 
