@@ -32,7 +32,7 @@ In Machine Learning, **regression** is a supervised learning approach used to pr
 * **Strengths:** Can handle realistic, multi-factor predictions.  
 * **Limitations:** Sensitive to correlation between variables (multicollinearity).  
 
-### **c) Polynomial Regression**  
+### **c) Polynomial Regression **  
 * **Idea:** Extends linear regression by including higher-order powers (x², x³…) to model curved patterns.  
 * **Example:** Predicting population growth where growth accelerates at first and then slows over time.  
 * **Strengths:** Good at capturing non-linear relationships.  
