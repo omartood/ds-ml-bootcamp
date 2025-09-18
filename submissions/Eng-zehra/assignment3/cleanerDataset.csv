@@ -1,0 +1,51 @@
+Buyer,Distance,NeedPharm,Rating,Safety,Suitability
+Yes,6-15,No,Exc,Yes,Not Suitable
+Yes,0-5,Yes,Exc,Yes,Suitable
+Yes,16-30,Yes,Avg,Yes,Suitable
+Yes,6-15,Yes,Avg,Unsure,Not Suitable
+Yes,16-30,Yes,Avg,Yes,Suitable
+Yes,0-5,Yes,Good,Yes,Suitable
+Yes,0-5,No,Poor,No,Not Suitable
+Yes,0-5,Yes,Good,Unsure,Not Suitable
+Yes,6-15,Yes,Good,Unsure,Not Suitable
+Yes,6-15,Yes,Avg,Yes,Suitable
+Yes,>30,Yes,Avg,Yes,Suitable
+No,6-15,No,Poor,Yes,Not Suitable
+No,0-5,Yes,Good,Yes,Suitable
+No,0-5,Yes,Exc,Yes,Suitable
+Yes,0-5,Yes,Avg,No,Not Suitable
+Yes,0-5,Yes,Avg,No,Not Suitable
+No,0-5,Yes,Avg,No,Not Suitable
+Yes,0-5,Yes,Avg,Yes,Suitable
+Yes,0-5,Yes,Exc,Yes,Suitable
+No,16-30,Yes,Exc,No,Not Suitable
+Yes,0-5,No,Exc,Yes,Not Suitable
+Yes,0-5,Yes,Exc,Yes,Suitable
+No,0-5,Yes,Good,No,Not Suitable
+Yes,6-15,Yes,Good,Unsure,Not Suitable
+No,0-5,Yes,Poor,Yes,Suitable
+No,6-15,Yes,Avg,Unsure,Not Suitable
+Yes,0-5,No,Avg,Yes,Not Suitable
+Yes,6-15,Yes,Good,Yes,Suitable
+No,16-30,Yes,Good,Yes,Suitable
+No,>30,Yes,Exc,Yes,Suitable
+Yes,6-15,Yes,Good,No,Not Suitable
+Yes,0-5,Yes,Good,Unsure,Not Suitable
+No,16-30,Yes,Good,Yes,Suitable
+Yes,>30,Yes,Avg,Yes,Suitable
+No,0-5,Yes,Good,No,Not Suitable
+No,6-15,Yes,Exc,Unsure,Not Suitable
+No,0-5,Yes,Good,Yes,Suitable
+No,16-30,Yes,Exc,No,Not Suitable
+Yes,16-30,Yes,Avg,Yes,Suitable
+Yes,0-5,Yes,Good,Yes,Suitable
+Yes,0-5,Yes,Avg,No,Not Suitable
+Yes,6-15,No,Good,Yes,Not Suitable
+Yes,16-30,Yes,Poor,Yes,Suitable
+Yes,0-5,Yes,Avg,Yes,Suitable
+Yes,6-15,No,Exc,Yes,Not Suitable
+Yes,0-5,Yes,Exc,Yes,Suitable
+Yes,16-30,Yes,Exc,No,Not Suitable
+Yes,16-30,Yes,Avg,Yes,Suitable
+Yes,6-15,Yes,Poor,Yes,Suitable
+Yes,0-5,Yes,Exc,No,Not Suitable
