@@ -1,0 +1,9 @@
+
+
+pip freeze  wuxu kusoo saaraya all package kugu jira 
+
+versions ka igu jiraa waa: 
+
+1: pandas==2.3.2
+2: numpy==2.3.2
+3: scikit-learn==1.7.1
