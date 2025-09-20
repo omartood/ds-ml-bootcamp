@@ -8,6 +8,9 @@
 
 **Assigment 1 - Done**
 **Assigment 2 - Done**
-**Assigment 3 -  waiting**
+**Assigment 3 - Done**
+**Assigment 4 -  Done**
+**Assigment 5 -  waiting**
+
 
 **#Note$ = each assigment i will try to add descriptions , readme, answers**
