@@ -1,43 +1,98 @@
-# 🎓 Reflection Paper – House Price Prediction
+# Comparison of the 3 Sanity Check Messages
 
-## 1. What I Implemented
-In this project, I trained two machine learning models — **Linear Regression** and **Random Forest Regressor** — to predict house prices.  
-The dataset used was already cleaned in Lesson 3 (`clean_house_dataset.csv`). I prepared features (X) by dropping the `Price` and `LogPrice` columns, and set `Price` as the target (y).  
-I then split the data (80% training, 20% testing), trained both models, and compared their performance using metrics: **R², MAE, MSE, RMSE**.
+## Message 1
+**Text:** "FREE RINGTONE text FIRST to 87131 ..."  
+**Actual:** Spam  
 
----
+**Predictions:**  
+- Logistic Regression → Spam  
+- Random Forest → Ham  
+- Naive Bayes → Spam  
 
-## 2. Comparison of Models
-For the **sanity check (row i=3)**, I compared the actual house price with predictions from both models.  
-- **Linear Regression** gave a more basic estimate.  
-- **Random Forest** predictions were usually closer to the true value because it captures non-linear relationships.  
+**Observation:** Random Forest was too conservative and missed this obvious spam. Logistic Regression and Naive Bayes correctly detected it because they are more sensitive to spam keywords.
 
-Overall, Random Forest gave more realistic predictions.
+## Message 2
+**Text:** "I'm wif him now buying tix lar..."  
+**Actual:** Ham  
 
----
+**Predictions:** All models predicted Ham  
 
-## 3. Understanding Random Forest
-Random Forest is an **ensemble learning method** made up of many decision trees.  
-- Each tree learns patterns from a random sample of the dataset and a random subset of features.  
-- The model’s final prediction is the **average of predictions** from all the trees (for regression).  
+**Observation:** All models agreed, correctly identifying a normal message.
 
-This reduces overfitting and makes Random Forest more robust than a single decision tree.
+## Message 3
+**Text:** "No management puzzeles."  
+**Actual:** Ham  
 
----
+**Predictions:** All models predicted Ham  
 
-## 4. Metrics Discussion
-When comparing results:
-- **Random Forest** had **higher R²** and **lower MAE/RMSE** than Linear Regression.  
-- This means Random Forest explained more variance in the target and made smaller errors.  
+**Observation:** Again, all models agreed.
 
-Linear Regression is simple and interpretable, but it assumes linear relationships. Random Forest handles complex, non-linear patterns better.
+## Conclusion
+The models mostly agreed on normal messages (Ham). Differences appeared with obvious spam, where Random Forest was conservative and misclassified it as Ham. Naive Bayes and Logistic Regression gave more realistic predictions for spam detection because they quickly pick up on spam keywords.
 
 ---
 
-## 5. Findings
-Based on the results, **Random Forest** performed better for predicting house prices in this dataset.  
-It gave more accurate predictions and adapted well to different features without strict assumptions.  
+# Understanding Naive Bayes
 
-However, I also see value in **Linear Regression** as a baseline: it is fast, easy to interpret, and provides a benchmark to compare against.  
+### 1. What is Naive Bayes?
+Naive Bayes is a probabilistic machine learning algorithm based on Bayes’ Theorem.  
+It calculates the probability that a message belongs to a certain class (spam or ham) based on the words it contains.  
+The “naive” assumption is that all words are independent, which is not always true, but works well for text classification.
 
-**Conclusion:** For practical price prediction, I prefer **Random Forest** because it balances accuracy and robustness. Linear Regression is useful for understanding overall trends, but Random Forest is better suited for real-world deployment.
+### 2. Why is it used in spam detection?
+- Effective for text data; handles word frequencies and probabilities easily.  
+- Fast, detects spam keywords like "FREE", "WIN", or "PRIZE".  
+- Works reasonably even with limited data; popular in email and SMS spam filtering.
+
+### 3. Advantages and Limitations
+
+**Advantages**  
+- Simple and easy to implement.  
+- Works well with large text datasets.  
+- Fast to train and predict.  
+- Handles many features efficiently.
+
+**Limitations**  
+- Assumes word independence, often not true in real language.  
+- May misclassify messages where context matters more than keywords.  
+- Less accurate for very complex patterns compared to Random Forest or Neural Networks.
+
+---
+
+# Metrics Discussion
+
+## Model Comparison
+
+| Model               | Accuracy | Precision | Recall | F1-Score |
+|--------------------|----------|-----------|--------|----------|
+| Logistic Regression | 0.968    | 1.000     | 0.758  | 0.863    |
+| Random Forest       | 0.983    | 1.000     | 0.872  | 0.932    |
+| Naive Bayes         | 0.977    | 1.000     | 0.826  | 0.904    |
+
+**Observations:**  
+- Accuracy: Random Forest slightly better (0.983).  
+- Precision: All models perfect (1.000), no Ham misclassified as Spam.  
+- Recall: Random Forest highest (0.872), Logistic Regression lowest (0.758).  
+- F1-Score: Random Forest highest (0.932), best balance between Precision and Recall.
+
+---
+
+# Confusion Matrix
+
+|                | Predicted Ham | Predicted Spam |
+|----------------|---------------|----------------|
+| Actual Ham     | True Negative | False Positive |
+| Actual Spam    | False Negative| True Positive  |
+
+- False Positives (FP): Ham misclassified as Spam. All models had 0 FP.  
+- False Negatives (FN): Spam misclassified as Ham. Logistic Regression had the most FN.
+
+---
+
+# Conclusion
+
+Random Forest had the best overall performance due to higher Recall and F1-Score, while all models avoided false alarms.  
+
+Random Forest correctly identified the most spam messages compared to Logistic Regression and Naive Bayes, providing a good balance between not mislabeling normal messages and catching spam.  
+
+Logistic Regression and Naive Bayes are fast and simple but may miss spam in borderline cases. Random Forest captures complex patterns better, making it the recommended model for practical spam detection.
