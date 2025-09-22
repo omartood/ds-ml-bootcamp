@@ -22,6 +22,7 @@ By the end of this lesson, students will be able to:
 
   * Elbow Method
   * Silhouette Score
+  * Davies–Bouldin Index
 
 ---
 
@@ -178,7 +179,7 @@ At **k=4**, improvement slows down → 4 clusters is best.
 
 ---
 
-### 3) Davies–Bouldin Index (extra)
+### 3) Davies–Bouldin Index
 
 * Measures **average similarity between clusters**.
 * Lower score = better separation.
@@ -207,7 +208,7 @@ At **k=4**, improvement slows down → 4 clusters is best.
 
 * **Clustering** = unsupervised learning for grouping data.
 * Main algorithms: **K-Means, Hierarchical, DBSCAN**.
-* Evaluation metrics: **Elbow Method, Silhouette Score**.
+* Evaluation metrics: **Elbow Method, Silhouette Score, Davies–Bouldin Index**.
 * Key difference:
 
   * Supervised = with labels.
