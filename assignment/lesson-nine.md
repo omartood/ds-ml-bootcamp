@@ -1,6 +1,6 @@
 # 🎓 Assignment 9 – Spending Pattern Analysis with K-Means (Clustering)
 
-**Due:** **Sunday, September 28, 2025 — 12:00 PM (Africa/Mogadishu / EAT)**
+**Due:** **Friday, September 26, 2025 — 12:00 PM (Africa/Mogadishu / EAT)**
 
 ## **Part A – Practical (Jupyter Notebook)**
 
