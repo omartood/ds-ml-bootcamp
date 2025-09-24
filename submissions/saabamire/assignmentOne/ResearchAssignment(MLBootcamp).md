@@ -1,5 +1,5 @@
 
-Research Assignment: Introduction to Machine Learning 
+Research Assignment one: Introduction to Machine Learning 
 
 1. What is Machine Learning with real-life example? 
 
