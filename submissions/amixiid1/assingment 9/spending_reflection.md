@@ -63,3 +63,4 @@ The clusters can be interpreted as follows (example values based on cluster cent
 
 ## Conclusion
 This exercise demonstrated how K-Means can reveal distinct customer groups. By analyzing cluster characteristics, businesses can tailor marketing strategies, improve customer retention, and maximize revenue opportunities.
+---
