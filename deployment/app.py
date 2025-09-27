@@ -13,7 +13,6 @@ MODELS = {
     "rf": joblib.load("models/rf_model.pkl"),
 }
 
-
 @app.route("/", methods=["GET"])
 def home():
     return jsonify({
@@ -31,11 +30,10 @@ def home():
         }
     })
 
-
 @app.route("/predict", methods=["POST"])
 def predict():
     # 1) choose model
-    choice = (request.args.get("model") or "lr").lower()
+    choice = (request.args.get("model")).lower()
     if choice not in MODELS:
         return jsonify({"error": "Unknown model. Use model=lr or model=rf"}), 400
     model = MODELS[choice]
@@ -66,5 +64,4 @@ def predict():
     })
 
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000, debug=False)
+app.run(host="0.0.0.0", port=8000, debug=False)

@@ -98,7 +98,7 @@ export default function HomePage() {
     setError("");
 
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+      const apiUrl = process.env.API_URL;
       const modelParam = getModelParam();
 
       const requestData = {
