@@ -61,9 +61,9 @@ print(f"  LR Pred     : ${p_lr_one:,.0f}")
 print(f"  RF Pred     : ${p_rf_one:,.0f}")
 
 # 8) SAVE MODELS (NEW)
-joblib.dump(lr, "models/lr_model.pkl")
-joblib.dump(rf, "models/rf_model.pkl")
-print("\nSaved models → models/lr_model.pkl and models/rf_model.pkl")
+joblib.dump(lr, "models/lr_model.joblib")
+joblib.dump(rf, "models/rf_model.joblib")
+print("\nSaved models → models/lr_model.joblib and models/rf_model.joblib")
 
 # 9) Optional: local custom input test using the shared helper
 custom = {

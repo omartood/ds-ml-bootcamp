@@ -9,9 +9,10 @@ CORS(app)   # <-- enable cross-origin requests
 
 # Load models once at startup
 MODELS = {
-    "lr": joblib.load("models/lr_model.pkl"),
-    "rf": joblib.load("models/rf_model.pkl"),
+    "lr": joblib.load("models/lr_model.joblib"),
+    "rf": joblib.load("models/rf_model.joblib"),
 }
+
 
 @app.route("/", methods=["GET"])
 def home():
@@ -29,6 +30,7 @@ def home():
             }
         }
     })
+
 
 @app.route("/predict", methods=["POST"])
 def predict():
