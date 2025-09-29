@@ -1,55 +1,52 @@
-# Customer Segmentation Analysis
+# K-Means Clustering Analysis: Customer Spending Behavior
 
-## 1. Implementation Workflow
+#### **1. Implementation Overview**
 
-I implemented a K-Means clustering model to segment customers based on their annual income and spending score. My workflow consisted of the following steps:
+I implemented a K-Means clustering model to segment customers based on their income and spending scores. Here is a summary of the workflow:
 
-1. **Data Loading and Preparation**: I loaded the `customers_l9_dataset.csv` dataset and dropped the `CustomerID`, `Gender`, and `Age` columns to focus solely on income and spending behavior.
+* **Data Loading and Preparation**: The `spending_l9_dataset.csv` dataset was loaded, and the `Income_$` and `SpendingScore` columns were selected as the features for clustering.
+* **Scaling**: To ensure that both features contributed equally to the clustering process, I used `StandardScaler` to scale the data. This prevents the `Income_$` feature, with its larger numerical range, from dominating the distance calculations.
+* **Elbow Method (SSE Loop)**: I calculated the Sum of Squared Errors (SSE) for K values from 1 to 10. The SSE represents the total distance of data points from their respective cluster centers. By observing how the SSE changes as K increases, we can identify an "elbow point" where the rate of SSE reduction slows, suggesting an optimal number of clusters.
+* **Model Training and Labeling**: Based on the analysis, I selected an optimal K, trained the K-Means model on the scaled data, and assigned a cluster label to each customer in the dataset.
+* **Metric Evaluation**: To validate the chosen K, I calculated the **Silhouette Score** and the **Davies-Bouldin Index (DBI)**. The Silhouette Score measures how similar a data point is to its own cluster compared to other clusters, while the DBI evaluates the average similarity between each cluster and its most similar one.
 
-2. **Feature Scaling**: To ensure that both features (`Annual Income (k$)` and `Spending Score (1-100)`) contributed equally to the clustering process, I standardized them using `StandardScaler`. This prevents the model from being biased towards features with larger scales.
+#### **2. Choosing K**
 
-3. **Elbow Method (SSE Loop)**: I ran a loop for `k` from 1 to 10 to determine the optimal number of clusters. For each `k`, I trained a K-Means model and calculated the Sum of Squared Errors (SSE), which is the sum of squared distances of samples to their closest cluster center. A lower SSE indicates denser clusters.
+* **Which K did you pick and why?**
+  I chose **K=4**. The SSE loop showed a significant drop in inertia from K=1 to K=4, after which the reduction became more gradual. This "elbow" at K=4 suggests that adding more clusters beyond this point yields diminishing returns.
 
-4. **Model Training and Labeling**: Based on the analysis, I chose `K=9` and trained the final K-Means model. I then used this model to predict the cluster for each customer and added the labels to the original DataFrame.
+* **Refer to SSE, Silhouette, and DBI you printed.**
+  * **SSE**: The SSE values were: `k=1, SSE=280.00`, `k=2, SSE=115.35`, `k=3, SSE=65.58`, and `k=4, SSE=38.94`. The drop from 3 to 4 clusters is substantial (a reduction of over 40%), while the drop from 4 to 5 is less pronounced (`SSE=31.11`).
+  * **Silhouette Score**: The score for K=4 was **0.49**, which is a respectable value indicating that the clusters are reasonably dense and well-separated.
+  * **Davies-Bouldin Index (DBI)**: The DBI for K=4 was **0.72**. A lower DBI is better, and this value, in conjunction with the other metrics, supports the choice of four distinct clusters.
 
-5. **Metric Evaluation**: To validate the quality of the clusters, I calculated the **Silhouette Score** (0.45) and the **Davies-Bouldin Index (DBI)** (0.79). A Silhouette Score closer to 1 and a DBI closer to 0 indicate well-defined, separated clusters.
+#### **3. Cluster Interpretation**
 
-## 2. Choosing K
+Based on the cluster centers (converted back to their original scale), I can define the four customer segments:
 
-I selected **K=9** for the final model. This decision was based on a combination of the following metrics:
+* **Cluster 0: High Income, Low Spending**
+  * **Description**: This group has a high average income (around $87k) but a very low spending score (16.2). They are cautious spenders or savers.
+  * **Business Action**: Target this group with premium, high-value products or investment opportunities. Since they don't spend much, exclusive offers or loyalty programs that reward high-value purchases could be effective.
 
-* **Sum of Squared Errors (SSE)**: The "elbow" in the SSE plot appeared around K=8 or K=9. After this point, the decrease in SSE for each additional cluster became less significant, suggesting diminishing returns. The drop from K=8 to K=9 was smaller than previous drops, and the drop from K=9 to K=10 was even smaller.
-* **Silhouette Score**: The score of 0.45 indicates that the clusters are reasonably well-separated. While not perfect, it's a solid score for this type of dataset.
-* **Davies-Bouldin Index (DBI)**: The DBI of 0.79 further supports the choice of K=9. A lower DBI is better, and this value suggests that the clusters are distinct enough for meaningful interpretation.
+* **Cluster 1: Low Income, High Spending**
+  * **Description**: This cluster has a low average income (around $25.8k) but a high spending score (79.7). These are likely younger customers or bargain hunters who are highly engaged.
+  * **Business Action**: Engage this group with promotions, discounts, and trendy, lower-cost items. They are prime candidates for "buy now, pay later" financing options.
 
-Choosing K=9 provided a good balance between model complexity (not too many clusters) and explanatory power (enough clusters to capture different customer behaviors).
+* **Cluster 2: Average Income, Average Spending**
+  * **Description**: This is the "average" customer, with a moderate income (around $55.4k) and a medium spending score (49.5). They are consistent but not extravagant.
+  * **Business Action**: Focus on upselling and cross-selling. Introduce them to new product lines or slightly more premium versions of what they already buy. Personalized recommendations could work well here.
 
-## 3. Cluster Interpretation
+* **Cluster 3: High Income, High Spending**
+  * **Description**: This is the ideal customer segment, with a high income (around $86.5k) and a high spending score (82.1). They have the means and the willingness to spend.
+  * **Business Action**: Treat this group as VIPs. Offer them exclusive access to new products, personalized services, and a premium loyalty program to ensure their retention.
 
-Here is a description of each of the 9 clusters and a suggested business action for each:
+#### **4. Limitations & Next Steps**
 
-| Cluster | Description | Annual Income (k$) | Spending Score (1-100) | Business Action |
-| :--- | :--- | :--- | :--- | :--- |
-| **0** | **High-Income Savers** | High (87.75) | Low (17.58) | Launch targeted campaigns for premium products or investment services to encourage spending. |
-| **1** | **Low-Income Cautious** | Low (25.72) | Low (20.27) | Offer budget-friendly deals and loyalty programs to build brand loyalty and increase purchase frequency. |
-| **2** | **High-Income Spenders** | High (86.53) | High (82.12) | Treat as VIPs. Offer exclusive access to new products, personalized services, and high-value upsells. |
-| **3** | **Average Joes** | Mid (55.29) | Mid (49.51) | Standard marketing is effective. Use personalized recommendations based on past purchases to drive sales. |
-| **4** | **Low-Income High-Spenders** | Low (26.30) | High (78.56) | This group might be young or taking on debt. Offer flexible payment options or student discounts. |
-| **5** | **Elite Spenders** | Very High (109.71) | High (88.28) | Provide exclusive luxury products and white-glove services. Focus on retention and brand advocacy. |
-| **6** | **Low-Income Risk Group** | Very Low (16.50) | Very High (80.50) | This group's spending exceeds their income, indicating potential risk. Approach with caution, perhaps with financial wellness resources. |
-| **7** | **Low-Income Minimalists** | Very Low (19.50) | Very Low (13.33) | Focus on engagement and introducing entry-level products. Small, frequent promotions may be effective. |
-| **8** | **Mid-Income Savers** | Mid (57.81) | Low (14.65) | Launch re-engagement campaigns to understand their needs better. Offer incentives to try new product categories. |
+* **What information might improve segmentation?**
+  The current segmentation is based solely on income and spending. It could be significantly improved by including additional demographic and behavioral data, such as:
+  * **Age**: To better distinguish between life stages (e.g., young professionals vs. established families).
+  * **Number of Visits**: To differentiate between frequent shoppers and occasional visitors.
+  * **Online vs. In-Store Purchases**: To understand channel preferences and tailor marketing efforts accordingly.
 
-## 4. Limitations & Next Steps
-
-**Limitations:**
-
-The current segmentation is based only on two features: income and spending score. This provides a good high-level overview but lacks depth. Important demographic and behavioral information that could improve segmentation includes:
-
-* **Age and Gender**: These were in the original dataset but were dropped. Including them could reveal patterns like "young male high-spenders" vs. "middle-aged female savers."
-* **Purchase History**: Data on `Number of Visits`, `Items per Basket`, and `Product Categories` would allow for more granular, behavior-based segmentation.
-* **Online vs. In-Store**: Understanding where customers shop could help tailor marketing channels and offers.
-
-**Next Steps:**
-
-A concrete next step would be to **incorporate the `Age` feature into the model**. By clustering on three features (`Annual Income`, `Spending Score`, and `Age`), we could uncover more nuanced customer profiles. For example, we might find that two clusters with similar income and spending scores are actually different age groups with different motivations (e.g., students vs. retirees). This would allow for even more targeted and effective business strategies.
+* **One concrete next step:**
+  A valuable next step would be to **try clustering with three features**. Adding `Age` to `Income_$` and `SpendingScore` could reveal more nuanced segments. For example, a "Young, High-Spending" group might emerge that was previously mixed in with other clusters, allowing for more targeted marketing campaigns.
