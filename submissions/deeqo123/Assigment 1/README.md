@@ -1,3 +1,4 @@
-Assigment one 
+# Assignment One — README
 
-Please do not modify, move, or delete any files or folders inside.
+**IMPORTANT:** Please do not modify, move, or delete any files or folders inside this directory.  
+This README was generated automatically per request.  
