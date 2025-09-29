@@ -1,6 +1,6 @@
 # HealthStatus Prediction Project
 
-The Hourse price Prediction Project 
+The Hourse price Prediction Project
 
 ---
 
@@ -8,7 +8,7 @@ The Hourse price Prediction Project
 
 - **Backend**: Flask API handles data preprocessing and model predictions.
 - **Frontend**: Next.js 15 provides a user-friendly interface for input and real-time results.
-- **Machine Learning Models**: Linear Regression and Random Forest trained on lifestyle data.
+- **Machine Learning Models**: Linear Regression and Random Forest trained on hourse prediction data.
 
 ---
 
