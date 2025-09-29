@@ -1,0 +1,3 @@
+Pandas version: 2.3.2
+NumPy version: 2.3.2
+Scikit-learn version: 1.7.2
