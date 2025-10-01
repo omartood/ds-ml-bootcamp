@@ -1,0 +1,9 @@
+# ===All the packages I used in Assignment 3===
+
+
+# numpy → for math operations and arrays
+numpy==2.0.2
+# pandas => for handling data
+pandas==2.3.2
+# scikit-learn (sklearn) => for scaling (StandardScaler
+scikit-learn==1.6.1
