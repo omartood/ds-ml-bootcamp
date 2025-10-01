@@ -68,4 +68,4 @@ The front-end application allows users to input house features and obtain predic
 ## 🚀 Deployment
 
 The project is deployed on GitHub Pages for the front-end and can be accessed at:  
-[https://mohamedjowhar.github.io/Machine-Learning-Project/](https://mohamedjowhar.github.io/Machine-Learning-Project/)
+[https://github.com/MohamedJowhar/Machine-Learning-Project/]
