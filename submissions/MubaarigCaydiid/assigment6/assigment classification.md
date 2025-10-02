@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 652c9cb4844bb95ac9aa4c2ba682866bd38d3d9b
 I have converted your notes into a structured English version suitable for a PDF:
 
 ---
