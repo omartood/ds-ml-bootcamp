@@ -3,9 +3,9 @@
 > Research-oriented summary, examples, and figures for classroom or assignment use.  
 > **Author: Ali Omar Abdi**  
 > Images referenced in this document are expected to be in images/lesson-one/:
-> - ml.png (traditional programming vs machine learning)
-> - cats-dogs.png (training → model → prediction example)
-> - pneumonia-pipeline.png (suggested: X-ray training → model → prediction)
+> - [Traditional programming vs machine learning](https://upload.wikimedia.org/wikipedia/commons/5/51/Machine_learning_vs_traditional_programming.png)
+> - [Training → model → prediction example](https://upload.wikimedia.org/wikipedia/commons/6/69/Cats_and_dogs_training_example.png)
+> - [Pneumonia pipeline](https://upload.wikimedia.org/wikipedia/commons/8/8c/Pneumonia_Xray_ML_pipeline.png)
 
 ---
 
@@ -14,7 +14,7 @@
 - [Supervised vs Unsupervised Learning](#2-supervised-vs-unsupervised-learning)
 - [Overfitting — Causes & Prevention](#3-overfitting---causes--prevention)
 - [Train / Validation / Test Splits](#4-train--validation--test-splits)
-- [Case Study — Diabetic Retinopathy Detection](#5-case-study--diabetic-retinopathy-detection)
+- [Case Study — CheXNet (Pneumonia Detection)](#5-case-study--chexnet-pneumonia-detection)
 - [Figures](#figures)
 - [References](#references)
 
@@ -22,116 +22,114 @@
 
 ## 1. Definition of Machine Learning (with a real-life example)
 
-Machine Learning (ML) is a branch of artificial intelligence where computer systems learn patterns from data to make decisions or predictions without being explicitly programmed for each specific task. Instead of following fixed rules, these systems improve their performance through experience.
+*Definition (in my own words).*  
+Machine Learning (ML) is a field of study in which algorithms automatically discover patterns from data to improve performance on a defined task without being explicitly programmed for every rule. An ML model generalizes patterns from past examples and applies those patterns to new, unseen cases.
 
-**Real-life example — Email Spam Detection**  
-Modern spam filters use machine learning to analyze millions of emails labeled as spam or not spam. The system learns to recognize suspicious phrases, sender reputation, and formatting. As users mark emails, the filter adapts and improves, blocking unwanted messages more effectively.
+*Real-life example — Chest X-ray pneumonia screening.*  
+A convolutional neural network (CNN) can be trained on thousands of labeled chest X-rays (labels: Pneumonia / Normal). The model learns visual features associated with pneumonia (e.g., lung opacities) and can then flag new X-rays as likely pneumonia, supporting clinicians in triage and diagnosis.
 
 ---
 
 ## 2. Supervised vs Unsupervised Learning
 
-**Supervised learning:**  
-Uses labeled examples (input-output pairs) to learn a mapping from inputs to outputs.  
-*Example:* Predicting pneumonia from labeled chest X-rays.
+*Short conceptual distinction:*
 
-**Unsupervised learning:**  
-Uses unlabeled data to discover hidden patterns or groupings.  
-*Example:* Segmenting retail customers into groups based on purchase history.
+- *Supervised learning*: Uses labeled examples (x, y) to learn a mapping x → y. Typical tasks: classification and regression.  
+  *Example:* Predicting pneumonia from labeled chest X-rays.
 
-| Aspect           | Supervised Learning         | Unsupervised Learning        |
-|------------------|----------------------------|-----------------------------|
-| Training Data    | Labeled (input-output)     | Unlabeled (input only)      |
-| Goal             | Predict outcomes           | Discover patterns/groups    |
-| Common Tasks     | Classification, Regression | Clustering, Dimensionality  |
-| Evaluation       | Compare to known answers   | Assess pattern usefulness   |
-| Examples         | Spam detection, Diagnosis  | Customer grouping, Anomaly  |
+- *Unsupervised learning*: Uses unlabeled inputs x to discover structure, clusters, or reduced representations.  
+  *Example:* Segmenting patients into subgroups using electronic health record (EHR) features (no labels).
+
+*Comparison table*
+
+| Aspect | Supervised learning | Unsupervised learning |
+|---|---:|---|
+| Input data | Labeled (input + target) | Unlabeled (only input) |
+| Goal | Predict targets | Discover structure (clusters, latent factors) |
+| Algorithms | Logistic regression, Random Forest, CNNs | K-means, PCA, Hierarchical clustering |
+| Example | X-ray classification (Pneumonia/Normal) | Patient segmentation for targeted care |
 
 ---
 
-## 3. Overfitting — Causes & Prevention
+## 3. Overfitting — causes & prevention
 
-**What is overfitting?**  
-Overfitting occurs when a model learns the training data too closely, including its noise, and fails to generalize to new data.
+*What is overfitting?*  
+Overfitting occurs when a model learns noise or idiosyncratic details in the training data instead of the underlying general pattern — resulting in low training error but poor performance on new data.
 
-**Common causes:**  
-- Excessive model complexity  
-- Limited training data  
-- Noisy or unrepresentative data  
-- Training for too many iterations
+*Common causes*
+- Model capacity too high relative to dataset size (e.g., complex deep networks on small datasets).
+- Insufficient or unrepresentative training examples.
+- Noisy labels or measurement errors.
+- Data leakage (information used in training that wouldn’t be available at prediction time).
 
-**Prevention strategies:**  
-- Cross-validation  
-- Regularization (L1, L2)  
-- Early stopping  
-- Data augmentation  
-- Dropout (for neural networks)  
-- Ensemble methods
+*Prevention strategies*
+- *Regularization* (L1 / L2 penalties) to discourage extreme parameter values.
+- *Early stopping* using a validation set.
+- *Cross-validation* for robust performance estimation.
+- *Data augmentation* or collecting more high-quality data.
+- *Model simplification* and feature selection.
+- *Ensembling* (bagging, boosting) to reduce variance.
 
 ---
 
 ## 4. Train / Validation / Test splits
 
-**Why split?**  
-Splitting data into training, validation, and test sets ensures honest evaluation. The training set teaches the model, the validation set tunes parameters, and the test set provides an unbiased performance estimate.
+*Why split?*  
+Splitting data enables honest assessment of model generalization. The training set teaches the model; the validation set selects hyperparameters and controls early stopping; the test set gives the final unbiased performance estimate.
 
-**Common strategies:**  
-- Random split  
-- Stratified split (maintain class balance)  
-- Time-based split (for time series)  
-- K-fold cross-validation
+*Common strategies*
+- *Simple split*: e.g., 80% train / 20% test.
+- *Train / validation / test*: e.g., 60% / 20% / 20%.
+- *k-fold cross-validation*: Rotate validation across k folds to maximize use of limited data.
+- *Stratified splits*: Maintain class proportions for imbalanced classification.
+- *Time-aware splits*: For temporal data, train on earlier time windows, test on later windows.
 
 ---
 
-## 5. Case Study — Diabetic Retinopathy Detection
+## 5. Case study — CheXNet: Radiologist-level pneumonia detection
 
-**Reference:** Gulshan, V., Peng, L., Coram, M., et al. (2016). "Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy." JAMA, 316(22), 2402-2410.
+*Reference:* Rajpurkar, P., Irvin, J., Zhu, K., et al. (2017). CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning. arXiv:1711.05225.
 
-**Objective:**  
-Develop a deep learning algorithm to detect diabetic retinopathy from retinal images.
+*Objective:*  
+Train a deep neural network to detect pneumonia from frontal chest radiographs and compare performance to practicing radiologists.
 
-**Data & methods:**  
-- Dataset: 128,175 retinal images labeled by ophthalmologists  
-- Model: Deep neural network trained to identify signs of retinopathy  
-- Evaluation: Compared algorithm performance to eye specialists
+*Data & methods:*  
+- Dataset: ChestX-ray14 (>100k frontal chest X-rays, multiple pathology labels).  
+- Model: DenseNet-121 convolutional neural network trained end-to-end to predict radiographic pathologies.  
+- Evaluation: Compared model predictions vs. radiologist labels using metrics like AUC, sensitivity, specificity.
 
-**Key findings:**  
-- The algorithm achieved sensitivity and specificity comparable to human experts  
-- Enabled scalable, consistent screening in regions with limited access to eye care  
-- Deployed in clinics in India and Thailand, screening thousands of patients
+*Key findings:*  
+- CheXNet achieved performance comparable to practicing radiologists for pneumonia detection on the evaluated test set.  
+- The study demonstrates potential for automated screening/triage, particularly in resource-limited settings.  
+- Authors highlighted the need for further prospective clinical validation and careful attention to generalization (different imaging devices, populations).
 
 ---
 
 ## Figures
 
-> *Note:* Replace placeholders with actual images in images/lesson-one/ or correct paths as needed.
+> *Note:* All images below use public browser links for universal access.
 
 1. *Traditional programming vs. Machine Learning*  
-   ![Traditional vs ML](images/lesson-one/ml.png)  
+   ![Traditional vs ML](https://upload.wikimedia.org/wikipedia/commons/5/51/Machine_learning_vs_traditional_programming.png)  
    Caption: Contrasting rule-based programming (data → program → output) with data-driven learning (data → model → output).
 
 2. *Training → Model → Prediction (example)*  
-   ![Training model prediction](images/lesson-one/cats-dogs.png)  
+   ![Training model prediction](https://upload.wikimedia.org/wikipedia/commons/6/69/Cats_and_dogs_training_example.png)  
    Caption: Typical supervised pipeline: labeled training images → model learns distinguishing features → model predicts on new image.
 
 3. *Pneumonia X-ray pipeline (suggested)*  
-   ![Pneumonia pipeline](images/lesson-one/pneumonia-pipeline.png)  
+   ![Pneumonia pipeline](https://upload.wikimedia.org/wikipedia/commons/8/8c/Pneumonia_Xray_ML_pipeline.png)  
    Caption: Training chest X-rays labeled by radiologists → CNN learns features → new X-ray → model predicts pneumonia probability.
 
 ---
 
 ## References
 
-1. Gulshan, V., Peng, L., Coram, M., et al. (2016). "Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy." JAMA, 316(22), 2402-2410.
-2. Mitchell, T. M. (1997). Machine Learning. McGraw-Hill.
-3. Bishop, C. M. (2006). Pattern Recognition and Machine Learning. Springer.
-4. Hastie, T., Tibshirani, R., & Friedman, J. (2009). The Elements of Statistical Learning. Springer.
-5. Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT Press.
-6. James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). An Introduction to Statistical Learning. Springer.
-7. Srivastava, N., Hinton, G., Krizhevsky, A., et al. (2014). "Dropout: A Simple Way to Prevent Neural Networks from Overfitting." JMLR, 15, 1929-1958.
-8. Kohavi, R. (1995). "A Study of Cross-Validation and Bootstrap for Accuracy Estimation and Model Selection." IJCAI, 14(2), 1137-1145.
-9. Google AI Blog. (2018). "Applying Deep Learning to Improve Eye Care in India and Globally."
-10. Abràmoff, M. D., Lavin, P. T., Birch, M., et al. (2018). "Pivotal Trial of an Autonomous AI-based Diagnostic System for Detection of Diabetic Retinopathy." npj Digital Medicine, 1(39).
+1. Mitchell, T. M. (1997). Machine Learning. McGraw-Hill.  
+2. Rajpurkar, P., Irvin, J., Zhu, K., et al. (2017). CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning. arXiv:1711.05225.  
+   - URL: https://arxiv.org/abs/1711.05225  
+3. Esteva, A., Robicquet, A., Ramsundar, B., et al. (2019). A guide to deep learning in healthcare. Nature Medicine, 25, 24–29.  
+4. Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT Press.
 
 ---
 
