@@ -2,10 +2,6 @@
 
 > Research-oriented summary, examples, and figures for classroom or assignment use.  
 > **Author: Ali Omar Abdi**  
-> Images referenced in this document are expected to be in images/lesson-one/:
-> - [Traditional programming vs machine learning](https://upload.wikimedia.org/wikipedia/commons/5/51/Machine_learning_vs_traditional_programming.png)
-> - [Training → model → prediction example](https://upload.wikimedia.org/wikipedia/commons/6/69/Cats_and_dogs_training_example.png)
-> - [Pneumonia pipeline](https://upload.wikimedia.org/wikipedia/commons/8/8c/Pneumonia_Xray_ML_pipeline.png)
 
 ---
 
@@ -15,7 +11,6 @@
 - [Overfitting — Causes & Prevention](#3-overfitting---causes--prevention)
 - [Train / Validation / Test Splits](#4-train--validation--test-splits)
 - [Case Study — CheXNet (Pneumonia Detection)](#5-case-study--chexnet-pneumonia-detection)
-- [Figures](#figures)
 - [References](#references)
 
 ---
@@ -105,23 +100,6 @@ Train a deep neural network to detect pneumonia from frontal chest radiographs a
 
 ---
 
-## Figures
-
-> *Note:* All images below use public browser links for universal access.
-
-1. *Traditional programming vs. Machine Learning*  
-   ![Traditional vs ML](https://upload.wikimedia.org/wikipedia/commons/5/51/Machine_learning_vs_traditional_programming.png)  
-   Caption: Contrasting rule-based programming (data → program → output) with data-driven learning (data → model → output).
-
-2. *Training → Model → Prediction (example)*  
-   ![Training model prediction](https://upload.wikimedia.org/wikipedia/commons/6/69/Cats_and_dogs_training_example.png)  
-   Caption: Typical supervised pipeline: labeled training images → model learns distinguishing features → model predicts on new image.
-
-3. *Pneumonia X-ray pipeline (suggested)*  
-   ![Pneumonia pipeline](https://upload.wikimedia.org/wikipedia/commons/8/8c/Pneumonia_Xray_ML_pipeline.png)  
-   Caption: Training chest X-rays labeled by radiologists → CNN learns features → new X-ray → model predicts pneumonia probability.
-
----
 
 ## References
 
