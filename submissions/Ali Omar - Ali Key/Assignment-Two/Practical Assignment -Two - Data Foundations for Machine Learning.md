@@ -35,7 +35,7 @@ Some cost data was verified by checking typical fares in the city.
 
 **Sample (7 rows):**
 
-1| Age | Distance (km) | Mode of Transport | Travel Time (min) | Days/Week | Daily Cost (USD) |
+1| Age | Distance (km) | Mode of Transport | Travel Time (min) | Days/Week | Daily Cost (USD)|
  |-----|---------------|------------------|-------------------|-----------|------------------|
 2| 28  | 1.3           | Walking          | 25                | 4         | 0.00             |
 3| 20  | 6.0           | Motorcycle       | 15                | 7         | 1.28             |
