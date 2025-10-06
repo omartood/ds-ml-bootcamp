@@ -35,15 +35,15 @@ Some cost data was verified by checking typical fares in the city.
 
 **Sample (7 rows):**
 
-1| Age | Distance (km) | Mode of Transport | Travel Time (min) | Days/Week | Daily Cost (USD)|
- |-----|---------------|------------------|-------------------|-----------|------------------|
-2| 28  | 1.3           | Walking          | 25                | 4         | 0.00             |
-3| 20  | 6.0           | Motorcycle       | 15                | 7         | 1.28             |
-4| 24  | 0.7           | Bajaj            | 23                | 4         | 1.07             |
-5| 26  | 5.0           | Motorcycle       | 22                | 7         | 1.20             |
-6| 24  | 2.2           | Motorcycle       | 27                | 3         | 0.98             |
-7| 20  | 5.7           | Walking          | 27                | 4         | 0.00             |
-8| 21  | 7.7           | Walking          | 16                | 3         | 0.00             |
+| # | Age | Distance (km) | Mode of Transport | Travel Time (min) | Days/Week | Daily Cost (USD) |
+|---|-----|---------------|------------------|------------------|-----------|-----------------|
+| 1 | 28  | 1.3           | Walking          | 25               | 4         | 0.00            |
+| 2 | 20  | 6.0           | Motorcycle       | 15               | 7         | 1.28            |
+| 3 | 24  | 0.7           | Bajaj            | 23               | 4         | 1.07            |
+| 4 | 26  | 5.0           | Motorcycle       | 22               | 7         | 1.20            |
+| 5 | 24  | 2.2           | Motorcycle       | 27               | 3         | 0.98            |
+| 6 | 20  | 5.7           | Walking          | 27               | 4         | 0.00            |
+| 7 | 21  | 7.7           | Walking          | 16               | 3         | 0.00            |
 
 ---
 
