@@ -16,7 +16,7 @@ waxan ka saaray khaladaadka, meelaha banan oo aan buuxiyey, duplicate, iqr_funct
 
 ###### single person check
 
-![alt text](/ds-ml-bootcamp/submissions/mrfiiqane/FinalProject/images/single-person-check.png)
+![alt text](./images/single-person-check.png)
 
 ###### upload file
 
