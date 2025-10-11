@@ -1,4 +1,4 @@
-# Student_Final_Prediction -- ML Workflow
+# Student_Final_Prediction
 
 ## 1: 📖 Description
 
