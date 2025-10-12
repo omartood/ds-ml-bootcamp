@@ -1,8 +1,3 @@
-
-I have converted your notes into a structured English version suitable for a PDF:
-
----
-
 # 1. What is Classification?
 - Classification is a type of supervised machine learning that predicts categories, such as spam or not, yes or no, male or female, etc.
 - Difference between classification and regression:
@@ -61,4 +56,3 @@ I have converted your notes into a structured English version suitable for a PDF
 - Helps doctors specialized in diagnosing this condition.
 
 ---
-
