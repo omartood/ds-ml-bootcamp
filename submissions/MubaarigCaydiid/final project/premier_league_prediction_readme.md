@@ -25,4 +25,4 @@ To achieve accurate predictions, three machine learning algorithms were implemen
 
 📁 All project files, including code, trained models, frontend components, and documentation, are available here:
 
-🔗 [https://github.com/MubaarikCaydiid/premierleague-prediction](https://github.com/MubaarikCaydiid/premierleague-prediction)
+🔗 [https://github.com/MubaarigCaydiid/Final-project-ml_model-premier_legue.git](https://github.com/MubaarigCaydiid/Final-project-ml_model-premier_legue.git)
