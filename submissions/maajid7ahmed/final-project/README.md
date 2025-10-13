@@ -28,3 +28,5 @@ Project-kan waa **Supervised Machine Learning (Classification)** kaas oo baranay
 - Model-ku wuxuu soo saaraa natiijo `0` (Safe) ama `1` (Fraud).  
 
 }
+
+## githublink: https://github.com/maajid7ahmed/credit-card-fraud-detection
